@@ -1,0 +1,10 @@
+Requirement:
+1. Python 2.7 or higher 
+2. Django 
+3. Postgresql_psycopg2
+4. Apache
+5. sorl-thumbnail (extended library needed for the project)
+6. django-paypal
+7. django-markwhat
+8. django-embed-video
+9. django-tinymce

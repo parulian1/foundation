@@ -1,0 +1,11 @@
+<?php echo theme_view('header'); ?>
+<style>body { background: #f5f5f5; }</style>
+<div id="content" class="login"><!-- Start of Main Container -->
+	<div class="wrapper">
+    <?php
+    echo isset($content) ? $content : Template::content();
+
+    
+?>
+	</div>
+<?php echo theme_view('footer', array('show' => false)); ?>

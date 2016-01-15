@@ -1,0 +1,223 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock title %}
+{% load markup %}
+{% load thumbnail %}
+{% load embed_video_tags %}
+{% block content_container %}
+<div class="big_image">
+	  <div class="row images">
+	  {% for image in images %}
+	  	{% thumbnail image.image "x360" crop="center" as im %}
+	  	<div value="{{forloop.counter}}" 
+	  		class="image {% ifequal forloop.counter 1 %}current_image{% endifequal %}"
+	  		style="background: url({{im.url}}); background-size: {{im.x}} {{im.y}};">
+	    		{{image.image_info|markdown}}
+		</div>
+		{% endthumbnail %}
+	 {% endfor %}
+	  </div>
+	  <ol class="flex-control-nav flex-control-paging">
+	  
+	  	{% for image in images %}
+	  	<li>
+		  	<a class="{% ifequal forloop.counter 1%}flex-active{%endifequal%}" 
+		  	value="{{forloop.counter}}">{{forloop.counter}}</a>
+	  	</li>
+	  	
+	  	{% endfor %}
+	  </ol>
+</div>
+<div class="section" id="pillars">
+	<h3 class="row headline">PILLARS</h3>
+	<div class="row underline">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+	<div class="row text">LOREM IPSUM BLA BLA BLA BLA BLA.... </div>
+	<div class="row" id="pillar_section">
+		<div id="pillar_wrapper">
+			<div class="pillar_column" id="first_pillar">
+				<div class="top">&nbsp;
+				</div>
+				<div class="middle">
+					<h4>EDUCATION</h4>
+					A bright mind and a critical point view would get a child 
+					far beyond
+					s/he dreams to be.
+				</div>
+				<div class="bottom">
+					<div class="bottom-learn"><a href="#">&nbsp;</a></div>
+				</div>
+			</div>
+			<div class="pillar_column" id="second_pillar">
+				<div class="top">&nbsp;
+				</div>
+				<div class="middle">
+					<h4>HEALTH</h4>
+					A strong and health physiqueis beneficial not only for the 
+					child's present state but also for his/her future.
+				</div>
+				<div class="bottom">
+					<div class="bottom-learn"><a href="#">&nbsp;</a></div>
+				</div>
+			</div>
+			<div class="pillar_column" id="third_pillar">
+				<div class="top">&nbsp;
+				</div>
+				<div class="middle">
+					<h4>ENVIRONMENT</h4>
+					A child's welfare would depend on the availability of finite 
+					resources, 
+				</div>
+				<div class="bottom">
+					<div class="bottom-learn"><a href="#">&nbsp;</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="section" id="programs">
+	<div id="separator"></div>
+	<h3 class="row">PROGRAMS</h3>
+	<div class="row underline">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+	<div class="row text">Things that we have done</div>
+	<div class="row" id="index_program">
+		<div id="program_wrapper">
+		{% for program in programs %}
+			<div class="program_column" id="program{{forloop.counter}}"
+				style="{% if program.gallery %}
+				background:url({{program.gallery.image.url}}) no-repeat;
+				{% endif%}background-size: 100% 100%;">
+				<div class="program_picture">
+					<div class="program_info">
+						<div class="top">{{program.title}}
+						</div>
+						<div class="middle">
+							{{program.content|truncatewords:35}}
+						</div>
+						<div class="bottom_info">
+							<div class="bottom-learn">
+							<a href="{% url 'view_program' program.id %}">learn more..</a></div>
+						</div>
+					</div>
+				</div>
+				<div class="bottom">
+					
+				</div>
+			</div>
+		{% endfor %}
+			<!--div class="program_column" id="second_program">
+				<div class="program_picture">
+					<div class="program_info">
+						<div class="top">Creative Green School
+						</div>
+						<div class="middle">
+							A child's welfare would depend on the availability of finite 
+							resources, 
+						</div>
+						<div class="bottom_info">
+							<div class="bottom-learn"><a href="#">learn more..</a></div>
+						</div>
+					</div>
+				</div>
+				<div class="bottom">
+					
+				</div>
+			</div>
+			<div class="program_column" id="third_program">
+				<div class="program_picture">
+					<div class="program_info">
+						<div class="top">Creative Green School
+						</div>
+						<div class="middle">
+							A child's welfare would depend on the availability of finite 
+							resources, 
+						</div>
+						<div class="bottom_info">
+							<div class="bottom-learn"><a href="#">learn more..</a></div>
+						</div>
+					</div>
+				</div>
+				<div class="bottom">
+					
+				</div>
+			</div-->
+		</div>
+	</div>
+	<div class="row" id="view_all"><a href="{% url 'program_main' %}"> >> view all </a></div>
+</div>
+<div class="section" id="impact">
+	<h3 class="row">IMPACT</h3>
+	<div class="row underline">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+	<div id="impact_graph_wrapper"> 
+		<div id="impact_graph"></div>
+	</div>
+	<div id="view_all"> <a> >> view all</a></div>
+</div>
+<div class="news">
+	<div id="index_news">
+		<span class="news_title">NEWS</span>
+		<div class="news_info">
+			<div class="news_info_section">
+				<div class="news_info_img"></div>
+				<div class="news_info_detail">
+					<span>Lorem ipsum</span>
+					<p>bla bla bla</p>
+				</div>
+			</div>
+			<div class="news_info_section">
+				<div class="news_info_img"></div>
+				<div class="news_info_detail">
+					<span>Lorem ipsum</span>
+					<p>bla bla bla</p>
+				</div>
+			</div>
+			<div class="news_info_section">
+				<div class="news_info_img"></div>
+				<div class="news_info_detail">
+					<span>Lorem ipsum</span>
+					<p>bla bla bla</p>
+				</div>
+			</div>
+			<div class="news_info_section">
+				<div class="news_info_img"></div>
+				<div class="news_info_detail">
+					<span>Lorem ipsum</span>
+					<p>bla bla bla</p>
+				</div>
+			</div>
+		</div>
+		<div id="view_all"> <a href="{% url 'news_main' %}" > >> view all</a></div>
+	</div>
+	<div id="index_blog">
+		<span class="news_title">VIDEO</span>
+		<div class="blog_info">
+			{% for video in videos %}
+				<a href="{% url 'view_video' video.id %}">
+				{% video video.location  as my_video %}
+				{% thumbnail my_video.thumbnail "289x190" as video_thumbnail %}
+			<div class="blog_col">
+				<div class="example" style="background: url({{video_thumbnail.url}}) no-repeat; background-size: 100%;">
+					<div class="play_button"></div>
+				</div>
+				<div class="info">
+					<span>{{video.title}}</span>
+					<p>{{video.additional_info|default:"tetur adipiscing elit."}}</p>
+				</div>
+			</div>
+			{% endthumbnail %}
+			{% endvideo %}
+			</a>
+			{% endfor %}
+			<!--div class="blog_col">
+				<div class="example">
+					<div class="play_button"></div>
+				</div>
+				<div class="info">
+					<span>TITLE</span>
+					<p>tetur adipiscing elit.</p>
+				</div>
+			</div-->
+		</div>
+		<div id="view_all"> <a href="{% url 'gallery' %}"> >> view all</a></div>
+	</div>
+</div>
+{% endblock content_container %}

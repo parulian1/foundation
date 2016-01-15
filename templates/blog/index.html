@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}Blog{% endblock title %}
+{% block content_container %}
+{% load markup %}
+<div class="content_wrapper">
+
+<div class="blog_content">
+       {% for  blog in blogs %}
+        <div class="blog_record">
+            <div class="blog_title_div row">
+                <div class="blog_title">
+                    <h1>{{blog.title}}</h1>
+                </div>
+                <div class="blog_created">
+                    {{blog.created_by}} at {{blog.created}}
+                </div>
+            </div>
+            <div class="blog_news row">
+                {{blog.content|markdown}}
+            </div>
+             <div class="blog_modified_info row">
+                <div class="blog_modificator">
+                    {{blog.modified_by}} at {{blog.modified}}
+                </div>
+                <div class="blog_modified">
+                    
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+</div>
+</div>
+{% endblock content_container %}

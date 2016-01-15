@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}Programs{% endblock title %}
+{% block content_container %}
+{% load markup %}
+{% load thumbnail %}
+<div class="content_wrapper">
+
+<div class="program_content">
+       {% for  program in programs %}
+        <div class="program_record">
+            <div class="program_title_div row">
+                <h3 class="program_title">{{program.title}}</h1>
+                 <span class="program_created">{{program.modified}}</span>
+            </div>
+            <div class="program_news row">
+                <div class="program_image">
+                {% thumbnail program.image "250x250" crop="center" as im %}
+                    <img src="{{ im.url }}" width="{{ im.x }}" height="{{ im.y }}">
+                {% endthumbnail %}
+                </div>
+                {{program.content|markdown|truncatewords:90 }}
+                <a href="{% url 'view_program' program.id %}">see more..</a>
+            </div>
+        </div>
+        {% endfor %}
+</div>
+</div>
+{% endblock content_container %}

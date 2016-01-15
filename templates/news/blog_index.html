@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}Blog{% endblock title %}
+{% block content_container %}
+{% load markup %}
+{% load thumbnail %}
+<div class="content_wrapper">
+
+<div class="blog_content">
+        {% for  blog in blogs %}
+        <div class="blog_record">
+            <div class="blog_title_div row">
+                <h3 class="blog_title">{{blog.title}}</h1>
+                 <span class="blog_created">{{blog.modified}}</span>
+            </div>
+            <div class="blog_news row">
+                <div class="blog_image">
+                {% thumbnail blog.gallery.image "250x250" crop="center" as im %}
+                    <img src="{{ im.url }}" width="{{ im.x }}" height="{{ im.y }}">
+                {% endthumbnail %}
+                </div>
+                {{blog.content|markdown }}
+            </div>
+        </div>
+        {% endfor %}
+</div>
+</div>
+{% endblock content_container %}

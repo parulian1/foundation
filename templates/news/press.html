@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}Press{% endblock title %}
+{% block content_container %}
+{% load markup %}
+{% load thumbnail %}
+<div class="content_wrapper">
+
+<div class="press_content">
+       {% for  press in news_press %}
+        <div class="press_record">
+            <div class="press_title_div row">
+                <h3 class="press_title">{{press.title}}</h1>
+                 <span class="program_created">{{press.modified}}</span>
+            </div>
+            <div class="press_news row">
+                <div class="press_image">
+                {% thumbnail press.gallery.image "250x250" crop="center" as im %}
+                    <img src="{{ im.url }}" width="{{ im.x }}" height="{{ im.y }}">
+                {% endthumbnail %}
+                </div>
+                {{press.content|markdown }}
+            </div>
+        </div>
+        {% endfor %}
+</div>
+</div>
+{% endblock content_container %}

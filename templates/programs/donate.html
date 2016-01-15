@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block title %}Donate{% endblock title %}
+{% block content_container %}
+{% load markup %}
+{% load thumbnail %}
+<div class="content_wrapper">
+
+<div class="blog_content">
+<div class="row">
+<!-- writes out the form tag automatically -->
+    <div id="demo">
+      {% for  program in programs %}
+        <div class="program_record">
+            <div class="program_title_div row">
+                <h3 class="program_title">{{program.title}}</h1>
+                 <span class="program_created">{{program.modified}}</span>
+            </div>
+            <div class="program_news row">
+                <div class="program_image">
+                {% thumbnail program.image "250x250" crop="center" as im %}
+                    <img src="{{ im.url }}" width="{{ im.x }}" height="{{ im.y }}">
+                {% endthumbnail %}
+                </div>
+                {{program.content|markdown }}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+  <div class="donation_button">{{ form.render }}</div>
+</div>
+</div>
+</div>
+<script>
+var valX = $(window).scrollTop();
+function syncScroll(target){
+    var valY = $(window).scrollTop();
+    var difYX = valY - valX;
+    var targetX = $(target).scrollTop();
+    if(valY > valX){
+        $(target).scrollTop(difYX);
+    }
+    if(difYX <= 0){
+        $(target).scrollTop(-50);
+    }
+}
+
+$(window).scroll(function(){
+    syncScroll('.donation_button');
+})
+</script>
+{% endblock content_container %}

@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %} Video - {{video.title}} {% endblock title %}
+{% block content_container %}
+{% load markup %}
+{% load thumbnail %}
+{% load embed_video_tags %}
+<div class="content_wrapper">
+
+<div class="video_content">
+        <div class="row">
+            <span><a href="{% url 'gallery' %}">Gallery</a> >> {{video.title}}</span>
+            <div class="video_title_div row">
+                <h3 class="video_title">{{video.title}}</h1>
+                 <span class="video_created">{{video.modified}}</span>
+            </div>
+            <div class="video_news row">
+                <div class="video_row">
+                    {% video video.location  as my_video %}
+                      {% video my_video '900x800' %}
+                    {% endvideo %}
+                </div>
+                {{video.additional_info|markdown }}
+            </div>
+        </div>
+</div>
+</div>
+{% endblock content_container %}

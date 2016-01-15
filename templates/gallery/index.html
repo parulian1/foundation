@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block title %}Photo/Video{% endblock title %}
+{% block content_container %}
+{% load markup %}
+{% load thumbnail %}
+{% load embed_video_tags %}
+<div class="content_wrapper">
+
+<div class="image_content">
+       {% for  gallery in galleries %}
+        <div class="image_record" style="{% if forloop.counter0|divisibleby:'3' %}clear:both;{%endif%}">
+            <div class="image_title_div row">
+                <div class="image_title">
+                    <h4>{{gallery.title}}</h4>
+                </div>
+                <div class="image_created">
+                </div>
+            </div>
+            <div class="image_news row">
+                {% thumbnail gallery.image "250x250" crop="center" as im %}
+                    <img src="{{ im.url }}" width="{{ im.x }}" height="{{ im.y }}">
+                {% endthumbnail %}
+            </div>
+        </div>
+        {% endfor %}
+</div>
+<div class="video_content row">
+       {% for  video in videos %}
+        <div class="video_record" style="{% if forloop.counter0|divisibleby:'2' %}clear:both;{%endif%}">
+            <div class="video_title_div row">
+                <div class="video_title">
+                    <h4>{{video.title}}</h4>
+                </div>
+                <div class="video_created">
+                </div>
+            </div>
+            <div class="video_news row">
+                {% video video.location  as my_video %}
+                  {% video my_video '450x350' %}
+                {% endvideo %}
+            </div>
+        </div>
+        {% endfor %}
+</div>
+</div>
+{% endblock content_container %}

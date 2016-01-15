@@ -1,0 +1,23 @@
+    <header>
+        <div class="row logo-header">
+                <div id="share_to">
+                    <a href="https://www.facebook.com/Koran-Anak-BERANI-181133758007/"><img src="{{media_url_prefix}}images/facebook.png"/></a>
+                    <a href="https://twitter.com/beranikidnews"><img src="{{media_url_prefix}}images/twitter.png"/></a>
+                    <a href="https://www.instagram.com/beranikidnews/"><img src="{{media_url_prefix}}images/instagram.png"/></a>
+                    <a href="https://plus.google.com/116922426173001936068"><img src="{{media_url_prefix}}images/google+.png"/></a>
+                </div>
+                <div id="header_menu">
+                    <div class="logo">
+                        <a href="{% url 'home' %}"><img src="{{media_url_prefix}}images/logo_yayasan.png" alt="logo" /></a>
+                    </div>
+                    <div class="button">
+                        <div class="menu_button {% ifequal active 1 %}active{% endifequal %}"><a href="{% url 'story' %}" >OUR STORY</a></div>
+                        <div class="menu_button {% ifequal active 2 %}active{% endifequal %}"><a href="{% url 'program_main' %}">PROGRAMS</a></div>
+                        <div class="menu_button {% ifequal active 3 %}active{% endifequal %}"><a href="{% url 'blog_main' %}">BLOG</a></div>
+                        <div class="menu_button {% ifequal active 4 %}active{% endifequal %}"><a href="{% url 'news_press' %}">PRESS</a></div>
+                        <div class="menu_button {% ifequal active 5 %}active{% endifequal %}"><a href="{% url 'support_us' %}">SUPPORT US</a></div>
+                    </div>
+                </div>
+        </div>
+        
+    </header>

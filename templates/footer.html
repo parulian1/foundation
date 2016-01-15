@@ -1,0 +1,179 @@
+<footer> 
+	<div id="footer_column1">
+		<div class="row" id="footer_links">
+			<div class="column" id="program_links">
+				<span id="program_link_header">OUR PROGRAM</span>
+				<a id="program_link" href="{% url 'program_help' %}">About Help</a>
+				<a id="program_link" href="{% url 'program_hold' %}">About Hold</a>
+				<a id="program_link" href="{% url 'program_hope' %}">About Hope</a>
+				<a id="program_link" href="{% url 'program_impact' %}">Program Impact</a>
+			</div>
+			<div class="column" id="involved_links">
+				<span id="program_link_header">GET INVOLVED</span>
+				<a id="program_link" href="{% url 'program_donate' %}">Donate</a>
+				<a id="program_link" href="{% url 'career' %}">Job & Internship</a>
+				<a id="program_link" href="https://www.facebook.com/Koran-Anak-BERANI-181133758007/">Like us on Facebook</a>
+				<a id="program_link" href="https://twitter.com/beranikidnews">Follow our Tweets</a>
+			</div>
+			<div class="column" id="news_media_links">
+				<span id="program_link_header">NEWS & MEDIA</span>
+				<a id="program_link" href="{% url 'news_main' %}">News Updates</a>
+				<a id="program_link" href="{% url 'news_press' %}">Press Releases</a>
+				<a id="program_link" href="{% url 'gallery' %}">Photo Video</a>
+				<a id="program_link" href="{% url 'blog_main' %}">Blog</a>
+			</div>
+		</div>
+		<div class="row" id="footer_logo">
+			<a href="/"><img src="{{media_url_prefix}}images/logo_yayasan.png" alt="logo" /></a>
+		</div>
+	</div>
+	<div id="footer_column2">
+		<div class="row">
+				<div id="subscribe-text">
+					<p>Subscribe</p>
+					<form action="#" method="post" accept-charset="utf-8" id="subscribe-blog-blog_subscription-2">
+					<input type="email" name="email" required="required" class="required" value="" id="subscribe-field-blog_subscription-2" placeholder="Email Address" />
+					<div id="subscribe-submit">
+						<input type="hidden" name="action" value="subscribe" />
+						<input type="hidden" name="source" value="http://beranifoundation.org/" />
+						<input type="hidden" name="sub-type" value="widget" />
+						<input type="hidden" name="redirect_fragment" value="blog_subscription-2" />
+						<input type="submit" value="Submit" name="jetpack_subscriptions_widget" />
+					</div>
+					</form>
+				</div>					
+		</div>
+		<div class="row" id="footer_share_to"> 
+			<a href="https://www.facebook.com/Koran-Anak-BERANI-181133758007/"><img src="{{media_url_prefix}}images/facebook.png"/></a>
+            <a href="https://twitter.com/beranikidnews"><img src="{{media_url_prefix}}images/twitter.png"/></a>
+            <a href="https://www.instagram.com/beranikidnews/"><img src="{{media_url_prefix}}images/instagram.png"/></a>
+            <a href="https://plus.google.com/116922426173001936068"><img src="{{media_url_prefix}}images/google+.png"/></a>
+		</div>
+		<!--img src="<?php echo Template::theme_url('../../assets/images/office_info.png') ?>" alt="logo" /-->
+	</div>
+</footer>
+<script>
+$(function(){
+    var $window = $(window);
+
+    function checkWidth() {
+        var windowsize = $window.width();
+        console.log(windowsize);
+        if (windowsize > 440) {
+            //if the window is greater than 440px wide then turn on jScrollPane..
+        }
+    }
+    // Execute on load
+    checkWidth();
+    // Bind event listener
+    // $(window).resize(checkWidth);
+
+    $(".menu_button").mouseover(function(){
+        $(this).animate({backgroundColor: "black" }, 1000); 
+        }).mouseout(function() { 
+            $(this).animate({backgroundColor: "#68BFEF" }, 500); 
+            }) ;
+    var slider_length = $(".flex-control-nav li a").length;
+    var current_image = $(".big_image .images .current_image");
+    var next_image = current_image.next();
+    setInterval(function(){
+        
+        // console.log(current_image.attr('value'));
+        if(current_image.attr('value') == slider_length){
+            // current_image = $(".big_image .images :first-child");
+            current_image = $(".big_image .images .current_image");
+            next_image = $(".big_image .images :first-child");
+        }
+        else{
+            next_image = current_image.next();
+        }
+        current_image.removeClass("current_image");
+        $(".flex-control-nav li").find(".flex-active").removeClass("flex-active");
+        current_image.fadeOut(1500);
+        next_image.addClass("current_image");
+        current_image = next_image;
+        current_image.fadeIn(1500);
+
+        $(".flex-control-nav li")
+            .find("a[value="+current_image.attr('value')+"]")
+            .addClass('flex-active');
+        
+    }, 4000);
+
+    $(".flex-control-nav li a").each(function(){
+        $(this).click(function(evt){
+            evt.preventDefault();
+            $(".flex-control-nav li a").each(function(){
+                $(this).removeAttr('class');
+            })
+            $(this).attr('class', 'flex-active');
+            var value = $(this).attr('value');
+            $(".big_image .images div").each(function(){
+            	$(this).removeClass("current_image")
+            	.fadeOut();
+            });
+            $(".big_image .images").find('div[value='+value+']')
+            .addClass("current_image").fadeIn(1000);
+        });
+    });
+
+    $("#first_pillar").hover(function(e){
+    	$(this).find('.top')
+    	.removeClass("top").addClass("top-active");
+    	var bottom = $(this).find('.bottom');
+    	bottom.find("a").html("learn more..");
+    	bottom.removeClass("bottom").addClass("bottom-active");
+    	$(this).addClass("column1_active");
+    }, function(f){
+		$(this).find('.top-active')
+		.removeClass("top-active").addClass("top");
+		var bottom = $(this).find('.bottom-active');
+		bottom.find("a").html("");
+		bottom.removeClass("bottom-active").addClass("bottom");
+		$(this).removeClass("column1_active");
+    });
+
+    $("#second_pillar").hover(function(e){
+    	$(this).find('.top')
+    	.removeClass("top").addClass("top-active");
+    	var bottom = $(this).find('.bottom');
+    	bottom.find("a").html("learn more..");
+    	bottom.removeClass("bottom").addClass("bottom-active");
+    	$(this).addClass("column2_active");
+    }, function(f){
+		$(this).find('.top-active')
+		.removeClass("top-active").addClass("top");
+		var bottom = $(this).find('.bottom-active');
+		bottom.find("a").html("");
+		bottom.removeClass("bottom-active").addClass("bottom");
+		$(this).removeClass("column2_active");
+    });
+
+    $("#third_pillar").hover(function(e){
+    	$(this).find('.top')
+    	.removeClass("top").addClass("top-active");
+    	var bottom = $(this).find('.bottom');
+    	bottom.find("a").html("learn more..");
+    	bottom.removeClass("bottom").addClass("bottom-active");
+    	$(this).addClass("column3_active");
+    }, function(f){
+		$(this).find('.top-active')
+		.removeClass("top-active").addClass("top");
+		var bottom = $(this).find('.bottom-active');
+		bottom.find("a").html("");
+		bottom.removeClass("bottom-active").addClass("bottom");
+		$(this).removeClass("column3_active");
+    });
+    $(".program_info").hide();
+
+    $(".program_column").hover(function(e){
+        $(this).find(".program_info").show();
+    }, function(f){
+        // $(this).find(".program_info").hide();
+    });
+
+})
+</script>
+</body>
+
+</html>
