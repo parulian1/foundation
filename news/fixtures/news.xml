@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<django-objects version="1.0">
+    <object pk="1" model="news.category">
+        <field type="CharField" name="name">Blog</field>
+        <field type="TextField" name="additional_info">blog</field>
+        <field type="DateTimeField" name="created">2016-01-18T06:35:57.100646+00:00</field>
+        <field to="auth.user" name="created_by" rel="ManyToOneRel">1</field>
+        <field type="DateTimeField" name="modified">2016-01-18T06:35:57.100681+00:00</field>
+        <field to="auth.user" name="modified_by" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="2" model="news.category">
+        <field type="CharField" name="name">press</field>
+        <field type="TextField" name="additional_info"></field>
+        <field type="DateTimeField" name="created">2016-01-18T06:36:12.214298+00:00</field>
+        <field to="auth.user" name="created_by" rel="ManyToOneRel">1</field>
+        <field type="DateTimeField" name="modified">2016-01-18T06:36:12.214333+00:00</field>
+        <field to="auth.user" name="modified_by" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="1" model="news.news">
+        <field type="CharField" name="title">Sumber Alfaria Trijaya Bagikan 10.000 Kacamata Gratis</field>
+        <field to="gallery.gallery" name="gallery" rel="ManyToOneRel">7</field>
+        <field type="TextField" name="content">&lt;strong&gt;PT Sumber Alfaria Trijaya Tbk (SAT)&lt;/strong&gt; bersama &lt;strong&gt;Yayasan Berani Bhakti Bangsa&lt;/strong&gt; menggagas program &lt;strong&gt;“Bright Eyes, Bright Future”&lt;/strong&gt;. Yayasan ini ditunjuk oleh PT SAT sebagai  penyelenggara program pemeriksaan mata hingga penyerahan kacamata ke 10.000 anak yang tersebar di seluruh Indonesia. Pada tahun sebelumnya, PT SAT juga telah menyelenggarakan program serupa dan berhasil melakukan pemeriksaan mata kepada 26.506 anak serta menyalurkan 5.744 buah kacamata.
+
+Untuk tahun ini, dengan melibatkan partisipasi masyarakat dari 16 Februari – 15 Maret 2014, SAT berhasil mengumpulkan donasi sebesar Rp 1.843.058.887 dari Alfamart dan Rp 173.084.497 dari Alfamidi.
+
+Solihin, Corporate Affairs Director SAT , menyatakan bahwa penerima bantuan akan didominasi oleh anak-anak hingga remaja dengan rentang usia dari 6 -15 tahun. “Pemeriksaan mata dan pemberian kacamata akan dilaksanakan di beberapa lokasi yakni Panti Asuhan, Wilayah Pasca Bencana Alam, serta sekolah di tingkat SD-SMP yang tersebar di Indonesia,” ungkapnya.
+
+Sementara itu, pemeriksaan mata perdana dilakukan di SD Bendungan Hilir 01, 02, 03, Jakarta Pusat. Sekitar 700 siswa telah menjalani pemeriksaan, hingga Jumat (4/4), ada sekitar 140 siswa  yang terdeteksi mengalami gangguan fokus pada matanya.
+
+Solihin mengimbuhkan bahwa  pada masyarakat pra-sejahter,  pemeriksaan mata sulit dilakukan karena keterbatasan biaya. Hal ini menyebabkan kesehatan mata tidak termasuk dalam prioritas mereka. “Program ini kami harapkan dapat membantu mereka dalam menekan angka kasus gangguan penglihatan,” jelas Solihin. (EVA)</field>
+        <field to="news.category" name="news_category" rel="ManyToOneRel">2</field>
+        <field type="CharField" name="slug">news, press</field>
+        <field type="BooleanField" name="hide">False</field>
+        <field type="DateTimeField" name="created">2016-01-18T06:43:35.165546+00:00</field>
+        <field to="auth.user" name="created_by" rel="ManyToOneRel">1</field>
+        <field type="DateTimeField" name="modified">2016-01-18T06:43:35.165578+00:00</field>
+        <field to="auth.user" name="modified_by" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="2" model="news.news">
+        <field type="CharField" name="title">30 Anak Belajar Bahasa Inggris di Rumah Albi</field>
+        <field to="gallery.gallery" name="gallery" rel="ManyToOneRel">8</field>
+        <field type="TextField" name="content">Sebanyak 30 anak dari Jabodetabek mendapat kesempatan turut serta dalam pelatihan Bahasa Inggris di Rumah Albi, Alfamart Cirendeu 5, Kota Tangsel, Rabu (5/11/2014).
+
+Diketahui, kegiatan ini dilaksanakan PT Sumber Alfaria Trijaya Tbk selaku pengelola minimarket Alfamart dan Alfamidi yang bekerjasama dengan Yayasan Berani Bhakti Bangsa.
+
+“Ini bentuk persiapan menyambut MEA (Masyarakat Ekonomi Asean). Maka itu, generasi penerus harus bisa bahasa asing, salah satunya bahasa Inggris,” kata pendiri Yayasan Berani Bhakti Bangsa, Witdarmono saat peluncuran Albi English Club di Cirendeu.
+
+Menurutnya, 30 anak yang hadir dalam kegiatan tersebut mewakili 375 siswa-siswi dari 6 lokasi Rumah Albi yang tersebar di Jabodetabek. “Mereka anak-anak pilihan,” kata dia.
+
+Dengan adanya Albi English Club ini, kata dia, diharapkan para pengajar dapat menekankan karakter dengan kurikulum yang disesuaikan dengan situasi saat ini.
+
+“Agar para siswa juga aktif dalam pembelajaran melalui metode yang fun yang dilaksanakan setiap hari senin dan rabu,” tandasnya.
+
+Fitriayani, Pengajar Bahasa Inggris di Rumah Albi mengatakan, anak-anak yang dipilih yakni, mereka yang mempunyai akademis yang baik.
+
+“Ada 30 orang anak dalam masing-masing kelas yang terdiri dari kelas A dan B,” kata dia.</field>
+        <field to="news.category" name="news_category" rel="ManyToOneRel">1</field>
+        <field type="CharField" name="slug">news, english training, blog</field>
+        <field type="BooleanField" name="hide">False</field>
+        <field type="DateTimeField" name="created">2016-01-18T06:49:20.919411+00:00</field>
+        <field to="auth.user" name="created_by" rel="ManyToOneRel">1</field>
+        <field type="DateTimeField" name="modified">2016-01-18T06:49:20.919436+00:00</field>
+        <field to="auth.user" name="modified_by" rel="ManyToOneRel">1</field>
+    </object>
+</django-objects>

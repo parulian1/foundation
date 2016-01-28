@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<django-objects version="1.0">
+    <object pk="1" model="gallery.gallery">
+        <field type="CharField" name="title">BEBF</field>
+        <field type="FileField" name="image">file/BEBF_n4wP6LW.jpg</field>
+        <field type="CharField" name="slug"></field>
+        <field type="TextField" name="image_info"><None></None></field>
+        <field type="BooleanField" name="show_to_index">False</field>
+        <field type="BooleanField" name="show">True</field>
+        <field type="DateTimeField" name="created">2016-01-18T06:00:36.226728+00:00</field>
+        <field to="auth.user" name="created_by" rel="ManyToOneRel">1</field>
+        <field type="DateTimeField" name="modified">2016-01-18T06:18:11.894292+00:00</field>
+        <field to="auth.user" name="modified_by" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="2" model="gallery.gallery">
+        <field type="CharField" name="title">BBM</field>
+        <field type="FileField" name="image">file/BBM.jpg</field>
+        <field type="CharField" name="slug"></field>
+        <field type="TextField" name="image_info"><None></None></field>
+        <field type="BooleanField" name="show_to_index">False</field>
+        <field type="BooleanField" name="show">True</field>
+        <field type="DateTimeField" name="created">2016-01-18T06:16:15.508363+00:00</field>
+        <field to="auth.user" name="created_by" rel="ManyToOneRel">1</field>
+        <field type="DateTimeField" name="modified">2016-01-18T06:16:15.509427+00:00</field>
+        <field to="auth.user" name="modified_by" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="3" model="gallery.gallery">
+        <field type="CharField" name="title">BEBF 2</field>
+        <field type="FileField" name="image">file/BEBF_n4wP6LW_oAvNRc2.jpg</field>
+        <field type="CharField" name="slug"></field>
+        <field type="TextField" name="image_info"><None></None></field>
+        <field type="BooleanField" name="show_to_index">False</field>
+        <field type="BooleanField" name="show">True</field>
+        <field type="DateTimeField" name="created">2016-01-18T06:19:25.260942+00:00</field>
+        <field to="auth.user" name="created_by" rel="ManyToOneRel">1</field>
+        <field type="DateTimeField" name="modified">2016-01-18T06:19:25.261915+00:00</field>
+        <field to="auth.user" name="modified_by" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="4" model="gallery.gallery">
+        <field type="CharField" name="title">Main Image I</field>
+        <field type="FileField" name="image">file/big_screen1_EAIcGd0.png</field>
+        <field type="CharField" name="slug">main_image</field>
+        <field type="TextField" name="image_info"></field>
+        <field type="BooleanField" name="show_to_index">True</field>
+        <field type="BooleanField" name="show">True</field>
+        <field type="DateTimeField" name="created">2016-01-18T06:31:49.988834+00:00</field>
+        <field to="auth.user" name="created_by" rel="ManyToOneRel">1</field>
+        <field type="DateTimeField" name="modified">2016-01-18T06:31:49.989957+00:00</field>
+        <field to="auth.user" name="modified_by" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="5" model="gallery.gallery">
+        <field type="CharField" name="title">Main Image II</field>
+        <field type="FileField" name="image">file/big_screen2_q0rpMrt.png</field>
+        <field type="CharField" name="slug">main_image</field>
+        <field type="TextField" name="image_info"></field>
+        <field type="BooleanField" name="show_to_index">True</field>
+        <field type="BooleanField" name="show">True</field>
+        <field type="DateTimeField" name="created">2016-01-18T06:32:42.937702+00:00</field>
+        <field to="auth.user" name="created_by" rel="ManyToOneRel">1</field>
+        <field type="DateTimeField" name="modified">2016-01-18T06:32:42.938638+00:00</field>
+        <field to="auth.user" name="modified_by" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="6" model="gallery.gallery">
+        <field type="CharField" name="title">Main Image III</field>
+        <field type="FileField" name="image">file/school_sport_T6jvkQI.jpg</field>
+        <field type="CharField" name="slug">main_image</field>
+        <field type="TextField" name="image_info"></field>
+        <field type="BooleanField" name="show_to_index">True</field>
+        <field type="BooleanField" name="show">True</field>
+        <field type="DateTimeField" name="created">2016-01-18T06:33:45.338908+00:00</field>
+        <field to="auth.user" name="created_by" rel="ManyToOneRel">1</field>
+        <field type="DateTimeField" name="modified">2016-01-18T06:33:45.341229+00:00</field>
+        <field to="auth.user" name="modified_by" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="7" model="gallery.gallery">
+        <field type="CharField" name="title">Sumber Alfaria Trijaya Bagikan 10.000 Kacamata Gratis</field>
+        <field type="FileField" name="image">file/DOK-BERANI-FOTO-3.jpg</field>
+        <field type="CharField" name="slug"></field>
+        <field type="TextField" name="image_info"><None></None></field>
+        <field type="BooleanField" name="show_to_index">False</field>
+        <field type="BooleanField" name="show">True</field>
+        <field type="DateTimeField" name="created">2016-01-18T06:43:35.162753+00:00</field>
+        <field to="auth.user" name="created_by" rel="ManyToOneRel">1</field>
+        <field type="DateTimeField" name="modified">2016-01-18T06:43:35.164191+00:00</field>
+        <field to="auth.user" name="modified_by" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="8" model="gallery.gallery">
+        <field type="CharField" name="title">30 Anak Belajar Bahasa Inggris di Rumah Albi</field>
+        <field type="FileField" name="image">file/Peluncuran-Albi-Cirendeu.jpg</field>
+        <field type="CharField" name="slug"></field>
+        <field type="TextField" name="image_info"><None></None></field>
+        <field type="BooleanField" name="show_to_index">False</field>
+        <field type="BooleanField" name="show">True</field>
+        <field type="DateTimeField" name="created">2016-01-18T06:49:20.916855+00:00</field>
+        <field to="auth.user" name="created_by" rel="ManyToOneRel">1</field>
+        <field type="DateTimeField" name="modified">2016-01-18T06:49:20.918016+00:00</field>
+        <field to="auth.user" name="modified_by" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="1" model="gallery.video">
+        <field type="CharField" name="title">Wawancara Bpk. Solihin - Direktur Alfamart &amp; Bpk. Tri Kurniadi - Wakil Walikota Jakarta Utara</field>
+        <field type="CharField" name="location">https://www.youtube.com/watch?v=2SvUadz_gc4</field>
+        <field type="CharField" name="slug">video, wawancara</field>
+        <field type="TextField" name="additional_info">Liputan Acara Bright Eyes Bright Future, yaitu pemeriksaan mata dan pembagian kacamata gratis bagi siswa/i. Acara ini terselenggara atas kerjasama Alfamart dan Yayasan Berani Bhakti Bangsa, berlangsung disalah satu SDN di Jakarta Utara. 
+Acara ini dihadiri oleh Direktur Alfamart Bapak Solihin, Wakil Walikota Jakarta Utara - Bapak Tri Kurniadi dan Yayasan Berani Bhakti Bangsa selaku penyelenggara acara tsb.
+</field>
+        <field type="BooleanField" name="show">True</field>
+        <field type="DateTimeField" name="created">2016-01-18T06:22:03.311327+00:00</field>
+        <field to="auth.user" name="created_by" rel="ManyToOneRel">1</field>
+        <field type="DateTimeField" name="modified">2016-01-18T06:22:53.045552+00:00</field>
+        <field to="auth.user" name="modified_by" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="2" model="gallery.video">
+        <field type="CharField" name="title">Albi english club</field>
+        <field type="CharField" name="location">https://www.youtube.com/watch?v=UnK6lPOD-uk</field>
+        <field type="CharField" name="slug">news, video</field>
+        <field type="TextField" name="additional_info">Yayasan Berani Bhakti Bangsa bekerjasama dengan PT. Sumber Alfaria Trijaya, Tbk telah memulai kegiatan pembelajaran Bahasa Inggris, ”Albi English Club (AEC)” untuk siswa/i sekolah dasar kelas 1 - 6.
+
+Program AEC dirancang sebagai after school program untuk menunjang pembelajaran Bahasa Inggris di sekolah-sekolah dengan aktivitas belajar yang fun. Program ini mendapat respon positif baik dari sekolah maupun orangtua siswa mengingat Bahasa Inggris kini tidak lagi menjadi mata pelajaran wajib di Sekolah Dasar.
+
+Di sisi lain, program ini memaksimalkan potensi Rumah Albi sebagai ruang komunal dan mendekatkan Alfamart dengan konsumen atau masyarakat sekitar. </field>
+        <field type="BooleanField" name="show">True</field>
+        <field type="DateTimeField" name="created">2016-01-18T06:27:22.997992+00:00</field>
+        <field to="auth.user" name="created_by" rel="ManyToOneRel">1</field>
+        <field type="DateTimeField" name="modified">2016-01-18T06:27:22.998025+00:00</field>
+        <field to="auth.user" name="modified_by" rel="ManyToOneRel">1</field>
+    </object>
+</django-objects>

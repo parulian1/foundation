@@ -65,6 +65,7 @@
 }
 .markItUpHeader ul li:hover > ul{
 	display:block;
+	z-index: 999;
 }
 .markItUpHeader ul .markItUpDropMenu {
 	background:transparent url(images/menu.png) no-repeat 115% 50%;
@@ -92,6 +93,7 @@
 	background:#F5F5F5;
 	border:1px solid #3C769D;
 	height:inherit;
+	margin-left: 0px;
 }
 .markItUpHeader ul ul li {
 	float:none;

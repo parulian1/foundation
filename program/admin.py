@@ -1,6 +1,6 @@
 from django import forms
 from django.contrib import admin
-from program.models import Program
+from program.models import Program, ProgramCategory
 from news.widget import MarkItUpWidget, AdminImageWidget
 from gallery.models import Gallery
 
@@ -15,7 +15,7 @@ class ProgramAdminForm(forms.ModelForm):
 
     def __init__(self, *args, **kwargs):
         super(ProgramAdminForm, self).__init__(*args, **kwargs)
-        # self.fields['content'].widget = MarkItUpWidget()
+        self.fields['content'].widget = MarkItUpWidget()
         image_value = None
         if self.instance and self.instance.id:
             if self.instance.gallery:
@@ -61,3 +61,17 @@ class ProgramAdmin(ProgramBase, admin.ModelAdmin):
         obj.save()
 
 admin.site.register(Program, ProgramAdmin)
+
+
+class ProgramCategoryBase(object):
+    list_display = ['name', 'modified_by', 'modified']
+
+class ProgramCategoryAdmin(ProgramCategoryBase, admin.ModelAdmin):
+
+    def save_model(self, request, obj, form, change):
+        obj.created_by = request.user
+        obj.modified_by = request.user
+    
+        obj.save()
+
+admin.site.register(ProgramCategory, ProgramCategoryAdmin)

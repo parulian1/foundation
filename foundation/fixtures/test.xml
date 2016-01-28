@@ -1,0 +1,791 @@
+<?xml version="1.0" encoding="utf-8"?>
+<django-objects version="1.0">
+    <object pk="96g5d5sdd84ueurh84dsiubxzt5kz6ze" model="sessions.session">
+        <field type="TextField" name="session_data">OWZhMmViMmIwZjdjYzEyNjFkYjZkZjJjYmQ5M2MzM2I4OTY1YTlkMTp7Il9hdXRoX3VzZXJfaGFzaCI6IjU4NDU5OGQ2NzExMWE3MzVhM2JhMjQzYzVkNTMwMjUxZTMxMjA1ZDQiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIxIn0=</field>
+        <field type="DateTimeField" name="expire_date">2016-02-01T04:38:44.007604+00:00</field>
+    </object>
+    <object pk="sorl-thumbnail||image||0c6ea750579ab1c2f84da0fa170b7f8d" model="thumbnail.kvstore">
+        <field type="TextField" name="value">{"storage": "django.core.files.storage.FileSystemStorage", "name": "file/BEBF_n4wP6LW_oAvNRc2.jpg", "size": [1024, 683]}</field>
+    </object>
+    <object pk="sorl-thumbnail||image||1f6467b4fe93ae43d486b4570f4d0361" model="thumbnail.kvstore">
+        <field type="TextField" name="value">{"storage": "django.core.files.storage.FileSystemStorage", "name": "file/big_screen1_EAIcGd0.png", "size": [1024, 385]}</field>
+    </object>
+    <object pk="sorl-thumbnail||image||2e7305b596c9a7f951b1a318394e7a98" model="thumbnail.kvstore">
+        <field type="TextField" name="value">{"storage": "django.core.files.storage.FileSystemStorage", "name": "cache/20/70/20702554538001ea9e3f7a417c7294aa.jpg", "size": [958, 360]}</field>
+    </object>
+    <object pk="sorl-thumbnail||image||3a30f5110a73ca3ced25e5e3fc9b235e" model="thumbnail.kvstore">
+        <field type="TextField" name="value">{"storage": "django.core.files.storage.FileSystemStorage", "name": "cache/91/ee/91ee89a1ff8ea78fb5d61d9a55ea7ee9.jpg", "size": [350, 350]}</field>
+    </object>
+    <object pk="sorl-thumbnail||image||3ecfddf16c81069d85cee55ae16982b4" model="thumbnail.kvstore">
+        <field type="TextField" name="value">{"storage": "django.core.files.storage.FileSystemStorage", "name": "cache/b6/a8/b6a836a9c8994b41c93fc5d48f9a4310.jpg", "size": [250, 250]}</field>
+    </object>
+    <object pk="sorl-thumbnail||image||430ff2751a93b268f22873167e726302" model="thumbnail.kvstore">
+        <field type="TextField" name="value">{"storage": "sorl.thumbnail.images.UrlStorage", "name": "http://img.youtube.com/vi/2SvUadz_gc4/hqdefault.jpg", "size": [480, 360]}</field>
+    </object>
+    <object pk="sorl-thumbnail||image||53a8fe98a0208b9afc37f451b57c0955" model="thumbnail.kvstore">
+        <field type="TextField" name="value">{"storage": "sorl.thumbnail.images.UrlStorage", "name": "http://img.youtube.com/vi/UnK6lPOD-uk/hqdefault.jpg", "size": [480, 360]}</field>
+    </object>
+    <object pk="sorl-thumbnail||image||5a278ac53f4798afce28c292c8c779ed" model="thumbnail.kvstore">
+        <field type="TextField" name="value">{"storage": "django.core.files.storage.FileSystemStorage", "name": "file/big_screen2_q0rpMrt.png", "size": [1024, 319]}</field>
+    </object>
+    <object pk="sorl-thumbnail||image||60a648e17da6cf1b0882aaed38a75288" model="thumbnail.kvstore">
+        <field type="TextField" name="value">{"storage": "django.core.files.storage.FileSystemStorage", "name": "file/DOK-BERANI-FOTO-3.jpg", "size": [640, 427]}</field>
+    </object>
+    <object pk="sorl-thumbnail||image||79ce75f3085e67f9ead20b61f14acc8b" model="thumbnail.kvstore">
+        <field type="TextField" name="value">{"storage": "django.core.files.storage.FileSystemStorage", "name": "cache/2e/3b/2e3b7848efc15ddf6ee09f11a051ca47.jpg", "size": [1156, 360]}</field>
+    </object>
+    <object pk="sorl-thumbnail||image||8dc67cb7e38e48299f2774ac081cae55" model="thumbnail.kvstore">
+        <field type="TextField" name="value">{"storage": "django.core.files.storage.FileSystemStorage", "name": "cache/7a/5c/7a5c7aa71efdc581c7ed2c66a89fda55.jpg", "size": [250, 250]}</field>
+    </object>
+    <object pk="sorl-thumbnail||image||8fc8a7b8e3887f77976cfab6b99046cc" model="thumbnail.kvstore">
+        <field type="TextField" name="value">{"storage": "django.core.files.storage.FileSystemStorage", "name": "file/BBM.jpg", "size": [781, 683]}</field>
+    </object>
+    <object pk="sorl-thumbnail||image||92cfb7e5b04c9a08e800656a7044af71" model="thumbnail.kvstore">
+        <field type="TextField" name="value">{"storage": "django.core.files.storage.FileSystemStorage", "name": "cache/54/f9/54f9b88981535bb773b64134a7c0d31b.jpg", "size": [250, 250]}</field>
+    </object>
+    <object pk="sorl-thumbnail||image||98c4ccc33dec62f541bc316302aa8b6a" model="thumbnail.kvstore">
+        <field type="TextField" name="value">{"storage": "django.core.files.storage.FileSystemStorage", "name": "file/school_sport_T6jvkQI.jpg", "size": [640, 425]}</field>
+    </object>
+    <object pk="sorl-thumbnail||image||9c5b252989540e4b73da28e342544197" model="thumbnail.kvstore">
+        <field type="TextField" name="value">{"storage": "django.core.files.storage.FileSystemStorage", "name": "cache/0e/b8/0eb81ebb7e1f4336d43baa3774013f7f.jpg", "size": [542, 360]}</field>
+    </object>
+    <object pk="sorl-thumbnail||image||bd0a67a3c7f51ba68a4414a4821b376c" model="thumbnail.kvstore">
+        <field type="TextField" name="value">{"storage": "django.core.files.storage.FileSystemStorage", "name": "cache/51/ce/51ceeb008d2f951a0869389848aa98c0.jpg", "size": [250, 250]}</field>
+    </object>
+    <object pk="sorl-thumbnail||image||c139add88b43c0f3d04e7f376f4b7f81" model="thumbnail.kvstore">
+        <field type="TextField" name="value">{"storage": "django.core.files.storage.FileSystemStorage", "name": "file/Peluncuran-Albi-Cirendeu.jpg", "size": [420, 280]}</field>
+    </object>
+    <object pk="sorl-thumbnail||image||e18ca874777f6345850a71e951a2e1b5" model="thumbnail.kvstore">
+        <field type="TextField" name="value">{"storage": "django.core.files.storage.FileSystemStorage", "name": "file/BEBF_n4wP6LW.jpg", "size": [1024, 683]}</field>
+    </object>
+    <object pk="sorl-thumbnail||image||e892cf3e7674fa775733c40b8635ee60" model="thumbnail.kvstore">
+        <field type="TextField" name="value">{"storage": "django.core.files.storage.FileSystemStorage", "name": "cache/88/1c/881c7147b1524f565c3d620c6b6805f0.jpg", "size": [253, 190]}</field>
+    </object>
+    <object pk="sorl-thumbnail||image||f300b81c1fd03b92107657833cf58262" model="thumbnail.kvstore">
+        <field type="TextField" name="value">{"storage": "django.core.files.storage.FileSystemStorage", "name": "cache/6d/83/6d83ba416d5d59ee295abac7074a0618.jpg", "size": [253, 190]}</field>
+    </object>
+    <object pk="sorl-thumbnail||image||f7f49513778b6e226cd097ba131cf3e2" model="thumbnail.kvstore">
+        <field type="TextField" name="value">{"storage": "django.core.files.storage.FileSystemStorage", "name": "cache/af/3b/af3b2afa5e68ee1b9d89e1cc164811ee.jpg", "size": [250, 250]}</field>
+    </object>
+    <object pk="sorl-thumbnail||thumbnails||0c6ea750579ab1c2f84da0fa170b7f8d" model="thumbnail.kvstore">
+        <field type="TextField" name="value">["92cfb7e5b04c9a08e800656a7044af71"]</field>
+    </object>
+    <object pk="sorl-thumbnail||thumbnails||1f6467b4fe93ae43d486b4570f4d0361" model="thumbnail.kvstore">
+        <field type="TextField" name="value">["2e7305b596c9a7f951b1a318394e7a98"]</field>
+    </object>
+    <object pk="sorl-thumbnail||thumbnails||430ff2751a93b268f22873167e726302" model="thumbnail.kvstore">
+        <field type="TextField" name="value">["e892cf3e7674fa775733c40b8635ee60"]</field>
+    </object>
+    <object pk="sorl-thumbnail||thumbnails||53a8fe98a0208b9afc37f451b57c0955" model="thumbnail.kvstore">
+        <field type="TextField" name="value">["f300b81c1fd03b92107657833cf58262"]</field>
+    </object>
+    <object pk="sorl-thumbnail||thumbnails||5a278ac53f4798afce28c292c8c779ed" model="thumbnail.kvstore">
+        <field type="TextField" name="value">["79ce75f3085e67f9ead20b61f14acc8b"]</field>
+    </object>
+    <object pk="sorl-thumbnail||thumbnails||60a648e17da6cf1b0882aaed38a75288" model="thumbnail.kvstore">
+        <field type="TextField" name="value">["bd0a67a3c7f51ba68a4414a4821b376c"]</field>
+    </object>
+    <object pk="sorl-thumbnail||thumbnails||8fc8a7b8e3887f77976cfab6b99046cc" model="thumbnail.kvstore">
+        <field type="TextField" name="value">["f7f49513778b6e226cd097ba131cf3e2"]</field>
+    </object>
+    <object pk="sorl-thumbnail||thumbnails||98c4ccc33dec62f541bc316302aa8b6a" model="thumbnail.kvstore">
+        <field type="TextField" name="value">["9c5b252989540e4b73da28e342544197"]</field>
+    </object>
+    <object pk="sorl-thumbnail||thumbnails||c139add88b43c0f3d04e7f376f4b7f81" model="thumbnail.kvstore">
+        <field type="TextField" name="value">["8dc67cb7e38e48299f2774ac081cae55"]</field>
+    </object>
+    <object pk="sorl-thumbnail||thumbnails||e18ca874777f6345850a71e951a2e1b5" model="thumbnail.kvstore">
+        <field type="TextField" name="value">["3a30f5110a73ca3ced25e5e3fc9b235e"]</field>
+    </object>
+    <object pk="1" model="auth.permission">
+        <field type="CharField" name="name">Can add PayPal IPN</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">1</field>
+        <field type="CharField" name="codename">add_paypalipn</field>
+    </object>
+    <object pk="2" model="auth.permission">
+        <field type="CharField" name="name">Can change PayPal IPN</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">1</field>
+        <field type="CharField" name="codename">change_paypalipn</field>
+    </object>
+    <object pk="3" model="auth.permission">
+        <field type="CharField" name="name">Can delete PayPal IPN</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">1</field>
+        <field type="CharField" name="codename">delete_paypalipn</field>
+    </object>
+    <object pk="4" model="auth.permission">
+        <field type="CharField" name="name">Can add category</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">2</field>
+        <field type="CharField" name="codename">add_category</field>
+    </object>
+    <object pk="5" model="auth.permission">
+        <field type="CharField" name="name">Can change category</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">2</field>
+        <field type="CharField" name="codename">change_category</field>
+    </object>
+    <object pk="6" model="auth.permission">
+        <field type="CharField" name="name">Can delete category</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">2</field>
+        <field type="CharField" name="codename">delete_category</field>
+    </object>
+    <object pk="7" model="auth.permission">
+        <field type="CharField" name="name">Can add news</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">3</field>
+        <field type="CharField" name="codename">add_news</field>
+    </object>
+    <object pk="8" model="auth.permission">
+        <field type="CharField" name="name">Can change news</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">3</field>
+        <field type="CharField" name="codename">change_news</field>
+    </object>
+    <object pk="9" model="auth.permission">
+        <field type="CharField" name="name">Can delete news</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">3</field>
+        <field type="CharField" name="codename">delete_news</field>
+    </object>
+    <object pk="10" model="auth.permission">
+        <field type="CharField" name="name">Can add career</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">4</field>
+        <field type="CharField" name="codename">add_career</field>
+    </object>
+    <object pk="11" model="auth.permission">
+        <field type="CharField" name="name">Can change career</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">4</field>
+        <field type="CharField" name="codename">change_career</field>
+    </object>
+    <object pk="12" model="auth.permission">
+        <field type="CharField" name="name">Can delete career</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">4</field>
+        <field type="CharField" name="codename">delete_career</field>
+    </object>
+    <object pk="13" model="auth.permission">
+        <field type="CharField" name="name">Can add program</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">5</field>
+        <field type="CharField" name="codename">add_program</field>
+    </object>
+    <object pk="14" model="auth.permission">
+        <field type="CharField" name="name">Can change program</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">5</field>
+        <field type="CharField" name="codename">change_program</field>
+    </object>
+    <object pk="15" model="auth.permission">
+        <field type="CharField" name="name">Can delete program</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">5</field>
+        <field type="CharField" name="codename">delete_program</field>
+    </object>
+    <object pk="16" model="auth.permission">
+        <field type="CharField" name="name">Can add gallery</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">6</field>
+        <field type="CharField" name="codename">add_gallery</field>
+    </object>
+    <object pk="17" model="auth.permission">
+        <field type="CharField" name="name">Can change gallery</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">6</field>
+        <field type="CharField" name="codename">change_gallery</field>
+    </object>
+    <object pk="18" model="auth.permission">
+        <field type="CharField" name="name">Can delete gallery</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">6</field>
+        <field type="CharField" name="codename">delete_gallery</field>
+    </object>
+    <object pk="19" model="auth.permission">
+        <field type="CharField" name="name">Can add video</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">7</field>
+        <field type="CharField" name="codename">add_video</field>
+    </object>
+    <object pk="20" model="auth.permission">
+        <field type="CharField" name="name">Can change video</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">7</field>
+        <field type="CharField" name="codename">change_video</field>
+    </object>
+    <object pk="21" model="auth.permission">
+        <field type="CharField" name="name">Can delete video</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">7</field>
+        <field type="CharField" name="codename">delete_video</field>
+    </object>
+    <object pk="22" model="auth.permission">
+        <field type="CharField" name="name">Can add log entry</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">8</field>
+        <field type="CharField" name="codename">add_logentry</field>
+    </object>
+    <object pk="23" model="auth.permission">
+        <field type="CharField" name="name">Can change log entry</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">8</field>
+        <field type="CharField" name="codename">change_logentry</field>
+    </object>
+    <object pk="24" model="auth.permission">
+        <field type="CharField" name="name">Can delete log entry</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">8</field>
+        <field type="CharField" name="codename">delete_logentry</field>
+    </object>
+    <object pk="25" model="auth.permission">
+        <field type="CharField" name="name">Can add permission</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">9</field>
+        <field type="CharField" name="codename">add_permission</field>
+    </object>
+    <object pk="26" model="auth.permission">
+        <field type="CharField" name="name">Can change permission</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">9</field>
+        <field type="CharField" name="codename">change_permission</field>
+    </object>
+    <object pk="27" model="auth.permission">
+        <field type="CharField" name="name">Can delete permission</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">9</field>
+        <field type="CharField" name="codename">delete_permission</field>
+    </object>
+    <object pk="28" model="auth.permission">
+        <field type="CharField" name="name">Can add group</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">10</field>
+        <field type="CharField" name="codename">add_group</field>
+    </object>
+    <object pk="29" model="auth.permission">
+        <field type="CharField" name="name">Can change group</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">10</field>
+        <field type="CharField" name="codename">change_group</field>
+    </object>
+    <object pk="30" model="auth.permission">
+        <field type="CharField" name="name">Can delete group</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">10</field>
+        <field type="CharField" name="codename">delete_group</field>
+    </object>
+    <object pk="31" model="auth.permission">
+        <field type="CharField" name="name">Can add user</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">11</field>
+        <field type="CharField" name="codename">add_user</field>
+    </object>
+    <object pk="32" model="auth.permission">
+        <field type="CharField" name="name">Can change user</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">11</field>
+        <field type="CharField" name="codename">change_user</field>
+    </object>
+    <object pk="33" model="auth.permission">
+        <field type="CharField" name="name">Can delete user</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">11</field>
+        <field type="CharField" name="codename">delete_user</field>
+    </object>
+    <object pk="34" model="auth.permission">
+        <field type="CharField" name="name">Can add content type</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">12</field>
+        <field type="CharField" name="codename">add_contenttype</field>
+    </object>
+    <object pk="35" model="auth.permission">
+        <field type="CharField" name="name">Can change content type</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">12</field>
+        <field type="CharField" name="codename">change_contenttype</field>
+    </object>
+    <object pk="36" model="auth.permission">
+        <field type="CharField" name="name">Can delete content type</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">12</field>
+        <field type="CharField" name="codename">delete_contenttype</field>
+    </object>
+    <object pk="37" model="auth.permission">
+        <field type="CharField" name="name">Can add session</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">13</field>
+        <field type="CharField" name="codename">add_session</field>
+    </object>
+    <object pk="38" model="auth.permission">
+        <field type="CharField" name="name">Can change session</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">13</field>
+        <field type="CharField" name="codename">change_session</field>
+    </object>
+    <object pk="39" model="auth.permission">
+        <field type="CharField" name="name">Can delete session</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">13</field>
+        <field type="CharField" name="codename">delete_session</field>
+    </object>
+    <object pk="40" model="auth.permission">
+        <field type="CharField" name="name">Can add kv store</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">14</field>
+        <field type="CharField" name="codename">add_kvstore</field>
+    </object>
+    <object pk="41" model="auth.permission">
+        <field type="CharField" name="name">Can change kv store</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">14</field>
+        <field type="CharField" name="codename">change_kvstore</field>
+    </object>
+    <object pk="42" model="auth.permission">
+        <field type="CharField" name="name">Can delete kv store</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">14</field>
+        <field type="CharField" name="codename">delete_kvstore</field>
+    </object>
+    <object pk="43" model="auth.permission">
+        <field type="CharField" name="name">Can add program category</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">15</field>
+        <field type="CharField" name="codename">add_programcategory</field>
+    </object>
+    <object pk="44" model="auth.permission">
+        <field type="CharField" name="name">Can change program category</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">15</field>
+        <field type="CharField" name="codename">change_programcategory</field>
+    </object>
+    <object pk="45" model="auth.permission">
+        <field type="CharField" name="name">Can delete program category</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">15</field>
+        <field type="CharField" name="codename">delete_programcategory</field>
+    </object>
+    <object pk="1" model="auth.user">
+        <field type="CharField" name="password">pbkdf2_sha256$20000$ibra7wN9xcbJ$E+60EfPGKbGDnLAAH17fVMtj+vJKofQSfyQrP9NGgbo=</field>
+        <field type="DateTimeField" name="last_login">2016-01-18T04:38:43.996393+00:00</field>
+        <field type="BooleanField" name="is_superuser">True</field>
+        <field type="CharField" name="username">admin</field>
+        <field type="CharField" name="first_name"></field>
+        <field type="CharField" name="last_name"></field>
+        <field type="CharField" name="email">admin@f.com</field>
+        <field type="BooleanField" name="is_staff">True</field>
+        <field type="BooleanField" name="is_active">True</field>
+        <field type="DateTimeField" name="date_joined">2016-01-18T04:07:40.154772+00:00</field>
+        <field to="auth.group" name="groups" rel="ManyToManyRel"></field>
+        <field to="auth.permission" name="user_permissions" rel="ManyToManyRel"></field>
+    </object>
+    <object pk="1" model="admin.logentry">
+        <field type="DateTimeField" name="action_time">2016-01-18T05:53:23.213353+00:00</field>
+        <field to="auth.user" name="user" rel="ManyToOneRel">1</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">15</field>
+        <field type="TextField" name="object_id">1</field>
+        <field type="CharField" name="object_repr">education</field>
+        <field type="PositiveSmallIntegerField" name="action_flag">1</field>
+        <field type="TextField" name="change_message"></field>
+    </object>
+    <object pk="2" model="admin.logentry">
+        <field type="DateTimeField" name="action_time">2016-01-18T05:53:38.171675+00:00</field>
+        <field to="auth.user" name="user" rel="ManyToOneRel">1</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">15</field>
+        <field type="TextField" name="object_id">2</field>
+        <field type="CharField" name="object_repr">health</field>
+        <field type="PositiveSmallIntegerField" name="action_flag">1</field>
+        <field type="TextField" name="change_message"></field>
+    </object>
+    <object pk="3" model="admin.logentry">
+        <field type="DateTimeField" name="action_time">2016-01-18T05:53:56.660077+00:00</field>
+        <field to="auth.user" name="user" rel="ManyToOneRel">1</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">15</field>
+        <field type="TextField" name="object_id">3</field>
+        <field type="CharField" name="object_repr">environment</field>
+        <field type="PositiveSmallIntegerField" name="action_flag">1</field>
+        <field type="TextField" name="change_message"></field>
+    </object>
+    <object pk="4" model="admin.logentry">
+        <field type="DateTimeField" name="action_time">2016-01-18T05:55:39.924811+00:00</field>
+        <field to="auth.user" name="user" rel="ManyToOneRel">1</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">5</field>
+        <field type="TextField" name="object_id">1</field>
+        <field type="CharField" name="object_repr">BEBF</field>
+        <field type="PositiveSmallIntegerField" name="action_flag">1</field>
+        <field type="TextField" name="change_message"></field>
+    </object>
+    <object pk="5" model="admin.logentry">
+        <field type="DateTimeField" name="action_time">2016-01-18T05:58:59.683062+00:00</field>
+        <field to="auth.user" name="user" rel="ManyToOneRel">1</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">5</field>
+        <field type="TextField" name="object_id">1</field>
+        <field type="CharField" name="object_repr">BEBF</field>
+        <field type="PositiveSmallIntegerField" name="action_flag">2</field>
+        <field type="TextField" name="change_message">Changed content.</field>
+    </object>
+    <object pk="6" model="admin.logentry">
+        <field type="DateTimeField" name="action_time">2016-01-18T06:00:36.230321+00:00</field>
+        <field to="auth.user" name="user" rel="ManyToOneRel">1</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">5</field>
+        <field type="TextField" name="object_id">1</field>
+        <field type="CharField" name="object_repr">BEBF</field>
+        <field type="PositiveSmallIntegerField" name="action_flag">2</field>
+        <field type="TextField" name="change_message">Changed image.</field>
+    </object>
+    <object pk="7" model="admin.logentry">
+        <field type="DateTimeField" name="action_time">2016-01-18T06:16:15.511871+00:00</field>
+        <field to="auth.user" name="user" rel="ManyToOneRel">1</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">5</field>
+        <field type="TextField" name="object_id">2</field>
+        <field type="CharField" name="object_repr">BBM</field>
+        <field type="PositiveSmallIntegerField" name="action_flag">1</field>
+        <field type="TextField" name="change_message"></field>
+    </object>
+    <object pk="8" model="admin.logentry">
+        <field type="DateTimeField" name="action_time">2016-01-18T06:17:52.454574+00:00</field>
+        <field to="auth.user" name="user" rel="ManyToOneRel">1</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">5</field>
+        <field type="TextField" name="object_id">1</field>
+        <field type="CharField" name="object_repr">BEBF</field>
+        <field type="PositiveSmallIntegerField" name="action_flag">2</field>
+        <field type="TextField" name="change_message">No fields changed.</field>
+    </object>
+    <object pk="9" model="admin.logentry">
+        <field type="DateTimeField" name="action_time">2016-01-18T06:18:11.896517+00:00</field>
+        <field to="auth.user" name="user" rel="ManyToOneRel">1</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">5</field>
+        <field type="TextField" name="object_id">1</field>
+        <field type="CharField" name="object_repr">BEBF</field>
+        <field type="PositiveSmallIntegerField" name="action_flag">2</field>
+        <field type="TextField" name="change_message">No fields changed.</field>
+    </object>
+    <object pk="10" model="admin.logentry">
+        <field type="DateTimeField" name="action_time">2016-01-18T06:19:25.264031+00:00</field>
+        <field to="auth.user" name="user" rel="ManyToOneRel">1</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">5</field>
+        <field type="TextField" name="object_id">3</field>
+        <field type="CharField" name="object_repr">BEBF 2</field>
+        <field type="PositiveSmallIntegerField" name="action_flag">1</field>
+        <field type="TextField" name="change_message"></field>
+    </object>
+    <object pk="11" model="admin.logentry">
+        <field type="DateTimeField" name="action_time">2016-01-18T06:22:03.312461+00:00</field>
+        <field to="auth.user" name="user" rel="ManyToOneRel">1</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">7</field>
+        <field type="TextField" name="object_id">1</field>
+        <field type="CharField" name="object_repr">Wawancara Bpk. Solihin - Direktur Alfamart &amp; Bpk. Tri Kurniadi - Wakil Walikota Jakarta Utara</field>
+        <field type="PositiveSmallIntegerField" name="action_flag">1</field>
+        <field type="TextField" name="change_message"></field>
+    </object>
+    <object pk="12" model="admin.logentry">
+        <field type="DateTimeField" name="action_time">2016-01-18T06:22:53.047048+00:00</field>
+        <field to="auth.user" name="user" rel="ManyToOneRel">1</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">7</field>
+        <field type="TextField" name="object_id">1</field>
+        <field type="CharField" name="object_repr">Wawancara Bpk. Solihin - Direktur Alfamart &amp; Bpk. Tri Kurniadi - Wakil Walikota Jakarta Utara</field>
+        <field type="PositiveSmallIntegerField" name="action_flag">2</field>
+        <field type="TextField" name="change_message">No fields changed.</field>
+    </object>
+    <object pk="13" model="admin.logentry">
+        <field type="DateTimeField" name="action_time">2016-01-18T06:27:22.999057+00:00</field>
+        <field to="auth.user" name="user" rel="ManyToOneRel">1</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">7</field>
+        <field type="TextField" name="object_id">2</field>
+        <field type="CharField" name="object_repr">Albi english club</field>
+        <field type="PositiveSmallIntegerField" name="action_flag">1</field>
+        <field type="TextField" name="change_message"></field>
+    </object>
+    <object pk="14" model="admin.logentry">
+        <field type="DateTimeField" name="action_time">2016-01-18T06:31:49.991334+00:00</field>
+        <field to="auth.user" name="user" rel="ManyToOneRel">1</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">6</field>
+        <field type="TextField" name="object_id">4</field>
+        <field type="CharField" name="object_repr">Main Image I</field>
+        <field type="PositiveSmallIntegerField" name="action_flag">1</field>
+        <field type="TextField" name="change_message"></field>
+    </object>
+    <object pk="15" model="admin.logentry">
+        <field type="DateTimeField" name="action_time">2016-01-18T06:32:42.939765+00:00</field>
+        <field to="auth.user" name="user" rel="ManyToOneRel">1</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">6</field>
+        <field type="TextField" name="object_id">5</field>
+        <field type="CharField" name="object_repr">Main Image II</field>
+        <field type="PositiveSmallIntegerField" name="action_flag">1</field>
+        <field type="TextField" name="change_message"></field>
+    </object>
+    <object pk="16" model="admin.logentry">
+        <field type="DateTimeField" name="action_time">2016-01-18T06:33:45.343013+00:00</field>
+        <field to="auth.user" name="user" rel="ManyToOneRel">1</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">6</field>
+        <field type="TextField" name="object_id">6</field>
+        <field type="CharField" name="object_repr">Main Image III</field>
+        <field type="PositiveSmallIntegerField" name="action_flag">1</field>
+        <field type="TextField" name="change_message"></field>
+    </object>
+    <object pk="17" model="admin.logentry">
+        <field type="DateTimeField" name="action_time">2016-01-18T06:35:57.101753+00:00</field>
+        <field to="auth.user" name="user" rel="ManyToOneRel">1</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">2</field>
+        <field type="TextField" name="object_id">1</field>
+        <field type="CharField" name="object_repr">Blog</field>
+        <field type="PositiveSmallIntegerField" name="action_flag">1</field>
+        <field type="TextField" name="change_message"></field>
+    </object>
+    <object pk="18" model="admin.logentry">
+        <field type="DateTimeField" name="action_time">2016-01-18T06:36:12.215202+00:00</field>
+        <field to="auth.user" name="user" rel="ManyToOneRel">1</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">2</field>
+        <field type="TextField" name="object_id">2</field>
+        <field type="CharField" name="object_repr">press</field>
+        <field type="PositiveSmallIntegerField" name="action_flag">1</field>
+        <field type="TextField" name="change_message"></field>
+    </object>
+    <object pk="19" model="admin.logentry">
+        <field type="DateTimeField" name="action_time">2016-01-18T06:43:35.167919+00:00</field>
+        <field to="auth.user" name="user" rel="ManyToOneRel">1</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">3</field>
+        <field type="TextField" name="object_id">1</field>
+        <field type="CharField" name="object_repr">1: Sumber Alfaria Trijaya Bagikan 10.000 Kacamata Gratis</field>
+        <field type="PositiveSmallIntegerField" name="action_flag">1</field>
+        <field type="TextField" name="change_message"></field>
+    </object>
+    <object pk="20" model="admin.logentry">
+        <field type="DateTimeField" name="action_time">2016-01-18T06:49:20.920525+00:00</field>
+        <field to="auth.user" name="user" rel="ManyToOneRel">1</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">3</field>
+        <field type="TextField" name="object_id">2</field>
+        <field type="CharField" name="object_repr">2: 30 Anak Belajar Bahasa Inggris di Rumah Albi</field>
+        <field type="PositiveSmallIntegerField" name="action_flag">1</field>
+        <field type="TextField" name="change_message"></field>
+    </object>
+    <object pk="1" model="gallery.video">
+        <field type="CharField" name="title">Wawancara Bpk. Solihin - Direktur Alfamart &amp; Bpk. Tri Kurniadi - Wakil Walikota Jakarta Utara</field>
+        <field type="CharField" name="location">https://www.youtube.com/watch?v=2SvUadz_gc4</field>
+        <field type="CharField" name="slug">video, wawancara</field>
+        <field type="TextField" name="additional_info">Liputan Acara Bright Eyes Bright Future, yaitu pemeriksaan mata dan pembagian kacamata gratis bagi siswa/i. Acara ini terselenggara atas kerjasama Alfamart dan Yayasan Berani Bhakti Bangsa, berlangsung disalah satu SDN di Jakarta Utara. 
+Acara ini dihadiri oleh Direktur Alfamart Bapak Solihin, Wakil Walikota Jakarta Utara - Bapak Tri Kurniadi dan Yayasan Berani Bhakti Bangsa selaku penyelenggara acara tsb.
+</field>
+        <field type="BooleanField" name="show">True</field>
+        <field type="DateTimeField" name="created">2016-01-18T06:22:03.311327+00:00</field>
+        <field to="auth.user" name="created_by" rel="ManyToOneRel">1</field>
+        <field type="DateTimeField" name="modified">2016-01-18T06:22:53.045552+00:00</field>
+        <field to="auth.user" name="modified_by" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="2" model="gallery.video">
+        <field type="CharField" name="title">Albi english club</field>
+        <field type="CharField" name="location">https://www.youtube.com/watch?v=UnK6lPOD-uk</field>
+        <field type="CharField" name="slug">news, video</field>
+        <field type="TextField" name="additional_info">Yayasan Berani Bhakti Bangsa bekerjasama dengan PT. Sumber Alfaria Trijaya, Tbk telah memulai kegiatan pembelajaran Bahasa Inggris, ”Albi English Club (AEC)” untuk siswa/i sekolah dasar kelas 1 - 6.
+
+Program AEC dirancang sebagai after school program untuk menunjang pembelajaran Bahasa Inggris di sekolah-sekolah dengan aktivitas belajar yang fun. Program ini mendapat respon positif baik dari sekolah maupun orangtua siswa mengingat Bahasa Inggris kini tidak lagi menjadi mata pelajaran wajib di Sekolah Dasar.
+
+Di sisi lain, program ini memaksimalkan potensi Rumah Albi sebagai ruang komunal dan mendekatkan Alfamart dengan konsumen atau masyarakat sekitar. </field>
+        <field type="BooleanField" name="show">True</field>
+        <field type="DateTimeField" name="created">2016-01-18T06:27:22.997992+00:00</field>
+        <field to="auth.user" name="created_by" rel="ManyToOneRel">1</field>
+        <field type="DateTimeField" name="modified">2016-01-18T06:27:22.998025+00:00</field>
+        <field to="auth.user" name="modified_by" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="1" model="gallery.gallery">
+        <field type="CharField" name="title">BEBF</field>
+        <field type="FileField" name="image">file/BEBF_n4wP6LW.jpg</field>
+        <field type="CharField" name="slug"></field>
+        <field type="TextField" name="image_info"><None></None></field>
+        <field type="BooleanField" name="show_to_index">False</field>
+        <field type="BooleanField" name="show">True</field>
+        <field type="DateTimeField" name="created">2016-01-18T06:00:36.226728+00:00</field>
+        <field to="auth.user" name="created_by" rel="ManyToOneRel">1</field>
+        <field type="DateTimeField" name="modified">2016-01-18T06:18:11.894292+00:00</field>
+        <field to="auth.user" name="modified_by" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="2" model="gallery.gallery">
+        <field type="CharField" name="title">BBM</field>
+        <field type="FileField" name="image">file/BBM.jpg</field>
+        <field type="CharField" name="slug"></field>
+        <field type="TextField" name="image_info"><None></None></field>
+        <field type="BooleanField" name="show_to_index">False</field>
+        <field type="BooleanField" name="show">True</field>
+        <field type="DateTimeField" name="created">2016-01-18T06:16:15.508363+00:00</field>
+        <field to="auth.user" name="created_by" rel="ManyToOneRel">1</field>
+        <field type="DateTimeField" name="modified">2016-01-18T06:16:15.509427+00:00</field>
+        <field to="auth.user" name="modified_by" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="3" model="gallery.gallery">
+        <field type="CharField" name="title">BEBF 2</field>
+        <field type="FileField" name="image">file/BEBF_n4wP6LW_oAvNRc2.jpg</field>
+        <field type="CharField" name="slug"></field>
+        <field type="TextField" name="image_info"><None></None></field>
+        <field type="BooleanField" name="show_to_index">False</field>
+        <field type="BooleanField" name="show">True</field>
+        <field type="DateTimeField" name="created">2016-01-18T06:19:25.260942+00:00</field>
+        <field to="auth.user" name="created_by" rel="ManyToOneRel">1</field>
+        <field type="DateTimeField" name="modified">2016-01-18T06:19:25.261915+00:00</field>
+        <field to="auth.user" name="modified_by" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="4" model="gallery.gallery">
+        <field type="CharField" name="title">Main Image I</field>
+        <field type="FileField" name="image">file/big_screen1_EAIcGd0.png</field>
+        <field type="CharField" name="slug">main_image</field>
+        <field type="TextField" name="image_info"></field>
+        <field type="BooleanField" name="show_to_index">True</field>
+        <field type="BooleanField" name="show">True</field>
+        <field type="DateTimeField" name="created">2016-01-18T06:31:49.988834+00:00</field>
+        <field to="auth.user" name="created_by" rel="ManyToOneRel">1</field>
+        <field type="DateTimeField" name="modified">2016-01-18T06:31:49.989957+00:00</field>
+        <field to="auth.user" name="modified_by" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="5" model="gallery.gallery">
+        <field type="CharField" name="title">Main Image II</field>
+        <field type="FileField" name="image">file/big_screen2_q0rpMrt.png</field>
+        <field type="CharField" name="slug">main_image</field>
+        <field type="TextField" name="image_info"></field>
+        <field type="BooleanField" name="show_to_index">True</field>
+        <field type="BooleanField" name="show">True</field>
+        <field type="DateTimeField" name="created">2016-01-18T06:32:42.937702+00:00</field>
+        <field to="auth.user" name="created_by" rel="ManyToOneRel">1</field>
+        <field type="DateTimeField" name="modified">2016-01-18T06:32:42.938638+00:00</field>
+        <field to="auth.user" name="modified_by" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="6" model="gallery.gallery">
+        <field type="CharField" name="title">Main Image III</field>
+        <field type="FileField" name="image">file/school_sport_T6jvkQI.jpg</field>
+        <field type="CharField" name="slug">main_image</field>
+        <field type="TextField" name="image_info"></field>
+        <field type="BooleanField" name="show_to_index">True</field>
+        <field type="BooleanField" name="show">True</field>
+        <field type="DateTimeField" name="created">2016-01-18T06:33:45.338908+00:00</field>
+        <field to="auth.user" name="created_by" rel="ManyToOneRel">1</field>
+        <field type="DateTimeField" name="modified">2016-01-18T06:33:45.341229+00:00</field>
+        <field to="auth.user" name="modified_by" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="7" model="gallery.gallery">
+        <field type="CharField" name="title">Sumber Alfaria Trijaya Bagikan 10.000 Kacamata Gratis</field>
+        <field type="FileField" name="image">file/DOK-BERANI-FOTO-3.jpg</field>
+        <field type="CharField" name="slug"></field>
+        <field type="TextField" name="image_info"><None></None></field>
+        <field type="BooleanField" name="show_to_index">False</field>
+        <field type="BooleanField" name="show">True</field>
+        <field type="DateTimeField" name="created">2016-01-18T06:43:35.162753+00:00</field>
+        <field to="auth.user" name="created_by" rel="ManyToOneRel">1</field>
+        <field type="DateTimeField" name="modified">2016-01-18T06:43:35.164191+00:00</field>
+        <field to="auth.user" name="modified_by" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="8" model="gallery.gallery">
+        <field type="CharField" name="title">30 Anak Belajar Bahasa Inggris di Rumah Albi</field>
+        <field type="FileField" name="image">file/Peluncuran-Albi-Cirendeu.jpg</field>
+        <field type="CharField" name="slug"></field>
+        <field type="TextField" name="image_info"><None></None></field>
+        <field type="BooleanField" name="show_to_index">False</field>
+        <field type="BooleanField" name="show">True</field>
+        <field type="DateTimeField" name="created">2016-01-18T06:49:20.916855+00:00</field>
+        <field to="auth.user" name="created_by" rel="ManyToOneRel">1</field>
+        <field type="DateTimeField" name="modified">2016-01-18T06:49:20.918016+00:00</field>
+        <field to="auth.user" name="modified_by" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="1" model="program.program">
+        <field type="CharField" name="title">BEBF</field>
+        <field to="gallery.gallery" name="gallery" rel="ManyToOneRel">1</field>
+        <field to="program.programcategory" name="program_category" rel="ManyToOneRel"><None></None></field>
+        <field type="TextField" name="content">&lt;h4&gt;BRIGHT EYES BRIGHT FUTURE&lt;/h4&gt; merupakan program kerjasama Yayasan Berani Bhakti Bangsa bersama Kementerian Pemberdayaan Perempuan dan Perlindungan Anak bersama dan PT. Sumber Alfaria Trijaya Tbk.
+
+
+Program ini memfasilitasi kebutuhan anak-anak untuk mendapat sarana mengatasi gangguan mata, agar dapat melihat lebih baik.Melalui mata yang sehat, mereka mampu lebih jernih dalam merencanakan masa depan yang cerah. Bukan hanya itu, program ini juga membangun kepedulian masyarakat mengenai pentingnya kesehatan mata.
+
+Saat ini, Kesehatan mata anak belum menjadi perhatian utama. Kekurangan informasi kesehatan mata oleh orangtua, membuat mereka tidak menyadari bahwa sang anak telah menderita kelainan refraksi. Selain itu, rendahnya daya beli masyarakat juga menjadi salah satu faktor. Ketika orangtua mengetahui bahwa sang anak menderita kelainan refraksi tetapi tidak memeriksakannya karena biaya yang mahal untuk pemeriksaan mata dan pembuatan kacamata.
+
+Setiap tahunnya, pengguna kacamata minus mengalami peningkatan. Sekitar 55 juta penduduk Indonesia menderita kelainan refraksi 10 persen diantaranya anak usia 5-19 tahun. angka ini mengalami peningkatan luar biasa yang diduga karena adanya kemajuan teknologi. Televisi, komputer, Handphone, game, yang turut memicu peningkatan pengguna kacamata.
+
+Dalam proses pelaksanaan donasi, kami telah melakukan pemeriksaan terhadap 130.000 anak di 413 sekolah seluruh Indonesia. Berdasarkan pemeriksaan tersebut sebanyak 40.000 anak telah menerima donasi kacamata minus. Melihat situasi di lapangan menunjukan, kebutuhan kacamata untuk anak-anak masih sangat besar yaitu 7.5% dari total populasi anak-anak di Indonesia (sekitar 6 juta anak).
+
+Kami percaya dengan membantu kesehatan mata anak dapat membantu lebih percaya diri , memiliki kualitas akademik yang lebih baik dan menjadi generasi yang unggul.</field>
+        <field type="CharField" name="slug">program, bebf</field>
+        <field type="BooleanField" name="hide">False</field>
+        <field type="DateTimeField" name="created">2016-01-18T05:55:39.923237+00:00</field>
+        <field to="auth.user" name="created_by" rel="ManyToOneRel">1</field>
+        <field type="DateTimeField" name="modified">2016-01-18T06:18:11.895355+00:00</field>
+        <field to="auth.user" name="modified_by" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="2" model="program.program">
+        <field type="CharField" name="title">BBM</field>
+        <field to="gallery.gallery" name="gallery" rel="ManyToOneRel">2</field>
+        <field to="program.programcategory" name="program_category" rel="ManyToOneRel"><None></None></field>
+        <field type="TextField" name="content">&lt;strong&gt;&lt;h5&gt;Berbagi Bersama Masyarakat (BBM)&lt;/h5&gt;&lt;/strong&gt; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</field>
+        <field type="CharField" name="slug">program, bbm</field>
+        <field type="BooleanField" name="hide">False</field>
+        <field type="DateTimeField" name="created">2016-01-18T06:16:15.510820+00:00</field>
+        <field to="auth.user" name="created_by" rel="ManyToOneRel">1</field>
+        <field type="DateTimeField" name="modified">2016-01-18T06:16:15.510851+00:00</field>
+        <field to="auth.user" name="modified_by" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="3" model="program.program">
+        <field type="CharField" name="title">BEBF 2</field>
+        <field to="gallery.gallery" name="gallery" rel="ManyToOneRel">3</field>
+        <field to="program.programcategory" name="program_category" rel="ManyToOneRel"><None></None></field>
+        <field type="TextField" name="content">&lt;h4&gt;BRIGHT EYES BRIGHT FUTURE&lt;/h4&gt; merupakan program kerjasama Yayasan Berani Bhakti Bangsa bersama Kementerian Pemberdayaan Perempuan dan Perlindungan Anak bersama dan PT. Sumber Alfaria Trijaya Tbk.
+
+
+Program ini memfasilitasi kebutuhan anak-anak untuk mendapat sarana mengatasi gangguan mata, agar dapat melihat lebih baik.Melalui mata yang sehat, mereka mampu lebih jernih dalam merencanakan masa depan yang cerah. Bukan hanya itu, program ini juga membangun kepedulian masyarakat mengenai pentingnya kesehatan mata.
+
+Saat ini, Kesehatan mata anak belum menjadi perhatian utama. Kekurangan informasi kesehatan mata oleh orangtua, membuat mereka tidak menyadari bahwa sang anak telah menderita kelainan refraksi. Selain itu, rendahnya daya beli masyarakat juga menjadi salah satu faktor. Ketika orangtua mengetahui bahwa sang anak menderita kelainan refraksi tetapi tidak memeriksakannya karena biaya yang mahal untuk pemeriksaan mata dan pembuatan kacamata.
+
+Setiap tahunnya, pengguna kacamata minus mengalami peningkatan. Sekitar 55 juta penduduk Indonesia menderita kelainan refraksi 10 persen diantaranya anak usia 5-19 tahun. angka ini mengalami peningkatan luar biasa yang diduga karena adanya kemajuan teknologi. Televisi, komputer, Handphone, game, yang turut memicu peningkatan pengguna kacamata.
+
+Dalam proses pelaksanaan donasi, kami telah melakukan pemeriksaan terhadap 130.000 anak di 413 sekolah seluruh Indonesia. Berdasarkan pemeriksaan tersebut sebanyak 40.000 anak telah menerima donasi kacamata minus. Melihat situasi di lapangan menunjukan, kebutuhan kacamata untuk anak-anak masih sangat besar yaitu 7.5% dari total populasi anak-anak di Indonesia (sekitar 6 juta anak).
+
+Kami percaya dengan membantu kesehatan mata anak dapat membantu lebih percaya diri , memiliki kualitas akademik yang lebih baik dan menjadi generasi yang unggul.</field>
+        <field type="CharField" name="slug">program, bebf</field>
+        <field type="BooleanField" name="hide">False</field>
+        <field type="DateTimeField" name="created">2016-01-18T06:19:25.263105+00:00</field>
+        <field to="auth.user" name="created_by" rel="ManyToOneRel">1</field>
+        <field type="DateTimeField" name="modified">2016-01-18T06:19:25.263132+00:00</field>
+        <field to="auth.user" name="modified_by" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="1" model="program.programcategory">
+        <field type="CharField" name="name">education</field>
+        <field type="TextField" name="additional_info">Pillar education</field>
+        <field type="DateTimeField" name="created">2016-01-18T05:53:23.212220+00:00</field>
+        <field to="auth.user" name="created_by" rel="ManyToOneRel">1</field>
+        <field type="DateTimeField" name="modified">2016-01-18T05:53:23.212256+00:00</field>
+        <field to="auth.user" name="modified_by" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="2" model="program.programcategory">
+        <field type="CharField" name="name">health</field>
+        <field type="TextField" name="additional_info">pillar health</field>
+        <field type="DateTimeField" name="created">2016-01-18T05:53:38.170791+00:00</field>
+        <field to="auth.user" name="created_by" rel="ManyToOneRel">1</field>
+        <field type="DateTimeField" name="modified">2016-01-18T05:53:38.170829+00:00</field>
+        <field to="auth.user" name="modified_by" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="3" model="program.programcategory">
+        <field type="CharField" name="name">environment</field>
+        <field type="TextField" name="additional_info">pillar environment</field>
+        <field type="DateTimeField" name="created">2016-01-18T05:53:56.659215+00:00</field>
+        <field to="auth.user" name="created_by" rel="ManyToOneRel">1</field>
+        <field type="DateTimeField" name="modified">2016-01-18T05:53:56.659248+00:00</field>
+        <field to="auth.user" name="modified_by" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="1" model="news.news">
+        <field type="CharField" name="title">Sumber Alfaria Trijaya Bagikan 10.000 Kacamata Gratis</field>
+        <field to="gallery.gallery" name="gallery" rel="ManyToOneRel">7</field>
+        <field type="TextField" name="content">&lt;strong&gt;PT Sumber Alfaria Trijaya Tbk (SAT)&lt;/strong&gt; bersama &lt;strong&gt;Yayasan Berani Bhakti Bangsa&lt;/strong&gt; menggagas program &lt;strong&gt;“Bright Eyes, Bright Future”&lt;/strong&gt;. Yayasan ini ditunjuk oleh PT SAT sebagai  penyelenggara program pemeriksaan mata hingga penyerahan kacamata ke 10.000 anak yang tersebar di seluruh Indonesia. Pada tahun sebelumnya, PT SAT juga telah menyelenggarakan program serupa dan berhasil melakukan pemeriksaan mata kepada 26.506 anak serta menyalurkan 5.744 buah kacamata.
+
+Untuk tahun ini, dengan melibatkan partisipasi masyarakat dari 16 Februari – 15 Maret 2014, SAT berhasil mengumpulkan donasi sebesar Rp 1.843.058.887 dari Alfamart dan Rp 173.084.497 dari Alfamidi.
+
+Solihin, Corporate Affairs Director SAT , menyatakan bahwa penerima bantuan akan didominasi oleh anak-anak hingga remaja dengan rentang usia dari 6 -15 tahun. “Pemeriksaan mata dan pemberian kacamata akan dilaksanakan di beberapa lokasi yakni Panti Asuhan, Wilayah Pasca Bencana Alam, serta sekolah di tingkat SD-SMP yang tersebar di Indonesia,” ungkapnya.
+
+Sementara itu, pemeriksaan mata perdana dilakukan di SD Bendungan Hilir 01, 02, 03, Jakarta Pusat. Sekitar 700 siswa telah menjalani pemeriksaan, hingga Jumat (4/4), ada sekitar 140 siswa  yang terdeteksi mengalami gangguan fokus pada matanya.
+
+Solihin mengimbuhkan bahwa  pada masyarakat pra-sejahter,  pemeriksaan mata sulit dilakukan karena keterbatasan biaya. Hal ini menyebabkan kesehatan mata tidak termasuk dalam prioritas mereka. “Program ini kami harapkan dapat membantu mereka dalam menekan angka kasus gangguan penglihatan,” jelas Solihin. (EVA)</field>
+        <field to="news.category" name="news_category" rel="ManyToOneRel">2</field>
+        <field type="CharField" name="slug">news, press</field>
+        <field type="BooleanField" name="hide">False</field>
+        <field type="DateTimeField" name="created">2016-01-18T06:43:35.165546+00:00</field>
+        <field to="auth.user" name="created_by" rel="ManyToOneRel">1</field>
+        <field type="DateTimeField" name="modified">2016-01-18T06:43:35.165578+00:00</field>
+        <field to="auth.user" name="modified_by" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="2" model="news.news">
+        <field type="CharField" name="title">30 Anak Belajar Bahasa Inggris di Rumah Albi</field>
+        <field to="gallery.gallery" name="gallery" rel="ManyToOneRel">8</field>
+        <field type="TextField" name="content">Sebanyak 30 anak dari Jabodetabek mendapat kesempatan turut serta dalam pelatihan Bahasa Inggris di Rumah Albi, Alfamart Cirendeu 5, Kota Tangsel, Rabu (5/11/2014).
+
+Diketahui, kegiatan ini dilaksanakan PT Sumber Alfaria Trijaya Tbk selaku pengelola minimarket Alfamart dan Alfamidi yang bekerjasama dengan Yayasan Berani Bhakti Bangsa.
+
+“Ini bentuk persiapan menyambut MEA (Masyarakat Ekonomi Asean). Maka itu, generasi penerus harus bisa bahasa asing, salah satunya bahasa Inggris,” kata pendiri Yayasan Berani Bhakti Bangsa, Witdarmono saat peluncuran Albi English Club di Cirendeu.
+
+Menurutnya, 30 anak yang hadir dalam kegiatan tersebut mewakili 375 siswa-siswi dari 6 lokasi Rumah Albi yang tersebar di Jabodetabek. “Mereka anak-anak pilihan,” kata dia.
+
+Dengan adanya Albi English Club ini, kata dia, diharapkan para pengajar dapat menekankan karakter dengan kurikulum yang disesuaikan dengan situasi saat ini.
+
+“Agar para siswa juga aktif dalam pembelajaran melalui metode yang fun yang dilaksanakan setiap hari senin dan rabu,” tandasnya.
+
+Fitriayani, Pengajar Bahasa Inggris di Rumah Albi mengatakan, anak-anak yang dipilih yakni, mereka yang mempunyai akademis yang baik.
+
+“Ada 30 orang anak dalam masing-masing kelas yang terdiri dari kelas A dan B,” kata dia.</field>
+        <field to="news.category" name="news_category" rel="ManyToOneRel">1</field>
+        <field type="CharField" name="slug">news, english training, blog</field>
+        <field type="BooleanField" name="hide">False</field>
+        <field type="DateTimeField" name="created">2016-01-18T06:49:20.919411+00:00</field>
+        <field to="auth.user" name="created_by" rel="ManyToOneRel">1</field>
+        <field type="DateTimeField" name="modified">2016-01-18T06:49:20.919436+00:00</field>
+        <field to="auth.user" name="modified_by" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="1" model="news.category">
+        <field type="CharField" name="name">Blog</field>
+        <field type="TextField" name="additional_info">blog</field>
+        <field type="DateTimeField" name="created">2016-01-18T06:35:57.100646+00:00</field>
+        <field to="auth.user" name="created_by" rel="ManyToOneRel">1</field>
+        <field type="DateTimeField" name="modified">2016-01-18T06:35:57.100681+00:00</field>
+        <field to="auth.user" name="modified_by" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="2" model="news.category">
+        <field type="CharField" name="name">press</field>
+        <field type="TextField" name="additional_info"></field>
+        <field type="DateTimeField" name="created">2016-01-18T06:36:12.214298+00:00</field>
+        <field to="auth.user" name="created_by" rel="ManyToOneRel">1</field>
+        <field type="DateTimeField" name="modified">2016-01-18T06:36:12.214333+00:00</field>
+        <field to="auth.user" name="modified_by" rel="ManyToOneRel">1</field>
+    </object>
+</django-objects>

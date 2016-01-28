@@ -14,13 +14,13 @@ class MarkItUpWidget(forms.Textarea):
         js = (
             '../media/js/jquery-1.8.0.min.js',
             '../media/js/markitup/jquery.markitup.js',
-            '../media/js/markitup/sets/markdown/set.js',
+            # '../media/js/markitup/sets/markdown/set.js',
             '../media/js/markitup/markItUp_init.js',
         )
         css = {
             'screen': (
-                '../media/js/markitup/skins/simple/style.css',
-                '../media/js/markitup/sets/markdown/style.css',
+                '../media/js/markitup/skins/markitup/style.css',
+                '../media/js/markitup/sets/custom/style.css',
             )
         }
 

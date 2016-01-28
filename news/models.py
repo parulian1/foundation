@@ -12,10 +12,12 @@ from django.db.models import permalink, Max, Count
 from django.core import serializers
 from django.contrib.auth.models import User
 from django.contrib.contenttypes.models import ContentType
+from django.template.defaultfilters import capfirst
 
-from news.fields import DateTimeField
 from gallery.models import Gallery
-from tinymce.models import HTMLField
+from maps.models import City
+from news.fields import DateTimeField
+# from tinymce.models import HTMLField
 
 
 class Category(models.Model):
@@ -41,15 +43,24 @@ class Category(models.Model):
 
 class News(models.Model):
     title = models.CharField(max_length=255)
-    gallery = models.ForeignKey(Gallery, blank=True, null=True,
-                                   related_name='news_gallery')
-    # content = models.TextField(max_length=1500)
-    news_category = models.ForeignKey(Category, blank=True, null=True)
-    content = HTMLField()
+    location = models.ForeignKey(City, 
+                                blank=True,
+                                null=True)
+    gallery = models.ForeignKey(Gallery, 
+                                blank=True, 
+                                null=True,
+                                related_name='news_gallery')
+    content = models.TextField()
+    news_category = models.ForeignKey(Category, 
+                                      blank=True, 
+                                      null=True)
+    # content = HTMLField()
     slug = models.CharField(max_length=255)
-    hide = models.BooleanField(default=False, verbose_name="Draft")
+    hide = models.BooleanField(default=False, 
+                               verbose_name="Draft")
     
-    created = DateTimeField(auto_now_add=True, editable=False)
+    created = DateTimeField(auto_now_add=True, 
+                            editable=False)
     created_by = models.ForeignKey(User,
                                    related_name='news_created',
                                    editable=False)
@@ -71,22 +82,72 @@ class News(models.Model):
         return super(News, self).save(*args, **kwargs)
 
 
-class Career(models.Model):
-    CAREER_CHOICE = (
-        ('Internship', 'Internship'),
-        ('Freelance', 'Freelance'),
-        ('Full Time', 'Full Time'),
-    )
+class Blog(models.Model):
     title = models.CharField(max_length=255)
-    term = models.CharField(max_length=50, choices=CAREER_CHOICE, default="Internship")
-    function = models.TextField(max_length=500)
-    requirement = HTMLField()
-    show = models.BooleanField(default=False)
+    gallery = models.ForeignKey(Gallery, blank=True, null=True,
+                                   related_name='blog_gallery')
+    content = models.TextField()
+    category = models.ForeignKey(Category, blank=True, null=True)
+    # content = HTMLField()
+    slug = models.CharField(max_length=255)
+    hide = models.BooleanField(default=False, verbose_name="Draft")
+    
     created = DateTimeField(auto_now_add=True, editable=False)
     created_by = models.ForeignKey(User,
-                                   related_name='career_created',
+                                   related_name='blog_created',
                                    editable=False)
     modified = DateTimeField(auto_now=True, editable=False)
     modified_by = models.ForeignKey(User,
-                                    related_name='career_modified',
+                                    related_name='blog_modified',
                                     editable=False)
+
+    class Meta:
+        ordering = ['title', 'created']
+        
+
+    def __unicode__(self):
+        return '%s: %s' % (self.id, self.title)
+
+    def save(self, *args, **kwargs):
+        # TODO: Bypass the protection in SynchronizableModel if changing status
+        # and owner?
+        return super(Blog, self).save(*args, **kwargs)
+
+
+class Press(models.Model):
+    title = models.CharField(max_length=255)
+    location = models.ForeignKey(City, blank=True, null=True)
+    gallery = models.ForeignKey(Gallery, blank=True, null=True,
+                                   related_name='press_gallery')
+    content = models.TextField()
+    category = models.ForeignKey(Category, blank=True, null=True)
+    # content = HTMLField()
+    slug = models.CharField(max_length=255)
+    hide = models.BooleanField(default=False, verbose_name="Draft")
+    
+    created = DateTimeField(auto_now_add=True, editable=False)
+    created_by = models.ForeignKey(User,
+                                   related_name='press_created',
+                                   editable=False)
+    modified = DateTimeField(auto_now=True, editable=False)
+    modified_by = models.ForeignKey(User,
+                                    related_name='press_modified',
+                                    editable=False)
+
+    class Meta:
+        ordering = ['title', 'created']
+        
+
+    def __unicode__(self):
+        return '%s: %s' % (self.id, self.title)
+
+    def location_with_content(self):
+        if self.location:
+            return '<strong>%s</strong> - %s' %(capfirst(self.location.name), self.content)
+        else:
+            return self.content
+
+    def save(self, *args, **kwargs):
+        # TODO: Bypass the protection in SynchronizableModel if changing status
+        # and owner?
+        return super(Press, self).save(*args, **kwargs)

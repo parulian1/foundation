@@ -14,14 +14,29 @@
             </div>
             <div class="press_news row">
                 <div class="press_image">
-                {% thumbnail press.gallery.image "250x250" crop="center" as im %}
+                {% thumbnail press.gallery.image "250x250" as im %}
                     <img src="{{ im.url }}" width="{{ im.x }}" height="{{ im.y }}">
                 {% endthumbnail %}
                 </div>
-                {{press.content|markdown }}
+                    {{press.location_with_content|markdown}}
             </div>
         </div>
         {% endfor %}
+        <div class="pagination">
+            <span class="step-links">
+                {% if news_press.has_previous %}
+                    <a href="?page={{ news_press.previous_page_number }}">previous</a>
+                {% endif %}
+
+                <span class="current">
+                    Page {{ news_press.number }} of {{ news_press.paginator.num_pages }}.
+                </span>
+
+                {% if news_press.has_next %}
+                    <a href="?page={{ news_press.next_page_number }}">next</a>
+                {% endif %}
+            </span>
+        </div>
 </div>
 </div>
 {% endblock content_container %}

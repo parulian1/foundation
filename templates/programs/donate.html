@@ -17,7 +17,7 @@
             </div>
             <div class="program_news row">
                 <div class="program_image">
-                {% thumbnail program.image "250x250" crop="center" as im %}
+                {% thumbnail program.image "250x250" as im %}
                     <img src="{{ im.url }}" width="{{ im.x }}" height="{{ im.y }}">
                 {% endthumbnail %}
                 </div>
@@ -26,7 +26,24 @@
         </div>
         {% endfor %}
     </div>
-  <div class="donation_button">{{ form.render }}</div>
+  <div class="donation_button">
+    <div class="donation_info">
+      <h3>Donasi dapat dilakukan melalui </h3>
+      <div class="paypal row">
+      {{ form.render }}
+      <br/>
+          atau <br/>
+          <br/>
+      </div>
+      <div class="bank-info">
+          
+          Bank Mandiri <br/>
+          A/n Yayasan Berani Bhakti Bangsa <br/>
+          No Rekening. 117-00-0573070-0 <br/>
+          Cabang. Kebon Jeruk Perjuangan
+      </div>
+    </div>
+  </div>
 </div>
 </div>
 </div>

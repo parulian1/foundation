@@ -14,7 +14,7 @@
             </div>
             <div class="blog_news row">
                 <div class="blog_image">
-                {% thumbnail blog.gallery.image "250x250" crop="center" as im %}
+                {% thumbnail blog.gallery.image "250x250" as im %}
                     <img src="{{ im.url }}" width="{{ im.x }}" height="{{ im.y }}">
                 {% endthumbnail %}
                 </div>

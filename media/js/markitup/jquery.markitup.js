@@ -540,7 +540,7 @@
 				if (options.previewHandler && typeof options.previewHandler === 'function') {
 					options.previewHandler( $$.val() );
 				} else if (options.previewParser && typeof options.previewParser === 'function') {
-					var data = options.previewParser( $$.val() );
+					var data = options.previewParser( $$.val().replace('\n', "<br/>") );
 					writeInPreview(localize(data, 1) ); 
 				} else if (options.previewParserPath !== '') {
 					$.ajax({

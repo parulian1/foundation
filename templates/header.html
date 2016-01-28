@@ -10,13 +10,16 @@
                     <div class="logo">
                         <a href="{% url 'home' %}"><img src="{{media_url_prefix}}images/logo_yayasan.png" alt="logo" /></a>
                     </div>
-                    <div class="button">
-                        <div class="menu_button {% ifequal active 1 %}active{% endifequal %}"><a href="{% url 'story' %}" >OUR STORY</a></div>
-                        <div class="menu_button {% ifequal active 2 %}active{% endifequal %}"><a href="{% url 'program_main' %}">PROGRAMS</a></div>
-                        <div class="menu_button {% ifequal active 3 %}active{% endifequal %}"><a href="{% url 'blog_main' %}">BLOG</a></div>
-                        <div class="menu_button {% ifequal active 4 %}active{% endifequal %}"><a href="{% url 'news_press' %}">PRESS</a></div>
-                        <div class="menu_button {% ifequal active 5 %}active{% endifequal %}"><a href="{% url 'support_us' %}">SUPPORT US</a></div>
-                    </div>
+                    <nav class="button" role="full-horizontal">
+                        <div class="nav-menu"></div>
+                        <ul>
+                            <li class="menu_button {% ifequal active 1 %}active{% endifequal %}"><a href="{% url 'story' %}" >OUR STORY</a></li>
+                            <li class="menu_button {% ifequal active 2 %}active{% endifequal %}"><a href="{% url 'program:program_main' %}">PROGRAMS</a></li>
+                            <li class="menu_button {% ifequal active 3 %}active{% endifequal %}"><a href="{% url 'news:blog_main' %}">BLOG</a></li>
+                            <li class="menu_button {% ifequal active 4 %}active{% endifequal %}"><a href="{% url 'news:news_press' %}">PRESS</a></li>
+                            <li class="menu_button {% ifequal active 5 %}active{% endifequal %}"><a href="{% url 'support_us' %}">SUPPORT US</a></li>
+                        </ul>
+                    </nav>
                 </div>
         </div>
         

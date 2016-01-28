@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<django-objects version="1.0">
+    <object pk="1" model="program.programcategory">
+        <field type="CharField" name="name">education</field>
+        <field type="TextField" name="additional_info">Pillar education</field>
+        <field type="DateTimeField" name="created">2016-01-18T05:53:23.212220+00:00</field>
+        <field to="auth.user" name="created_by" rel="ManyToOneRel">1</field>
+        <field type="DateTimeField" name="modified">2016-01-18T05:53:23.212256+00:00</field>
+        <field to="auth.user" name="modified_by" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="2" model="program.programcategory">
+        <field type="CharField" name="name">health</field>
+        <field type="TextField" name="additional_info">pillar health</field>
+        <field type="DateTimeField" name="created">2016-01-18T05:53:38.170791+00:00</field>
+        <field to="auth.user" name="created_by" rel="ManyToOneRel">1</field>
+        <field type="DateTimeField" name="modified">2016-01-18T05:53:38.170829+00:00</field>
+        <field to="auth.user" name="modified_by" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="3" model="program.programcategory">
+        <field type="CharField" name="name">environment</field>
+        <field type="TextField" name="additional_info">pillar environment</field>
+        <field type="DateTimeField" name="created">2016-01-18T05:53:56.659215+00:00</field>
+        <field to="auth.user" name="created_by" rel="ManyToOneRel">1</field>
+        <field type="DateTimeField" name="modified">2016-01-18T05:53:56.659248+00:00</field>
+        <field to="auth.user" name="modified_by" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="1" model="program.program">
+        <field type="CharField" name="title">BEBF</field>
+        <field to="gallery.gallery" name="gallery" rel="ManyToOneRel">1</field>
+        <field to="program.programcategory" name="program_category" rel="ManyToOneRel"><None></None></field>
+        <field type="TextField" name="content">&lt;h4&gt;BRIGHT EYES BRIGHT FUTURE&lt;/h4&gt; merupakan program kerjasama Yayasan Berani Bhakti Bangsa bersama Kementerian Pemberdayaan Perempuan dan Perlindungan Anak bersama dan PT. Sumber Alfaria Trijaya Tbk.
+
+
+Program ini memfasilitasi kebutuhan anak-anak untuk mendapat sarana mengatasi gangguan mata, agar dapat melihat lebih baik.Melalui mata yang sehat, mereka mampu lebih jernih dalam merencanakan masa depan yang cerah. Bukan hanya itu, program ini juga membangun kepedulian masyarakat mengenai pentingnya kesehatan mata.
+
+Saat ini, Kesehatan mata anak belum menjadi perhatian utama. Kekurangan informasi kesehatan mata oleh orangtua, membuat mereka tidak menyadari bahwa sang anak telah menderita kelainan refraksi. Selain itu, rendahnya daya beli masyarakat juga menjadi salah satu faktor. Ketika orangtua mengetahui bahwa sang anak menderita kelainan refraksi tetapi tidak memeriksakannya karena biaya yang mahal untuk pemeriksaan mata dan pembuatan kacamata.
+
+Setiap tahunnya, pengguna kacamata minus mengalami peningkatan. Sekitar 55 juta penduduk Indonesia menderita kelainan refraksi 10 persen diantaranya anak usia 5-19 tahun. angka ini mengalami peningkatan luar biasa yang diduga karena adanya kemajuan teknologi. Televisi, komputer, Handphone, game, yang turut memicu peningkatan pengguna kacamata.
+
+Dalam proses pelaksanaan donasi, kami telah melakukan pemeriksaan terhadap 130.000 anak di 413 sekolah seluruh Indonesia. Berdasarkan pemeriksaan tersebut sebanyak 40.000 anak telah menerima donasi kacamata minus. Melihat situasi di lapangan menunjukan, kebutuhan kacamata untuk anak-anak masih sangat besar yaitu 7.5% dari total populasi anak-anak di Indonesia (sekitar 6 juta anak).
+
+Kami percaya dengan membantu kesehatan mata anak dapat membantu lebih percaya diri , memiliki kualitas akademik yang lebih baik dan menjadi generasi yang unggul.</field>
+        <field type="CharField" name="slug">program, bebf</field>
+        <field type="BooleanField" name="hide">False</field>
+        <field type="DateTimeField" name="created">2016-01-18T05:55:39.923237+00:00</field>
+        <field to="auth.user" name="created_by" rel="ManyToOneRel">1</field>
+        <field type="DateTimeField" name="modified">2016-01-18T06:18:11.895355+00:00</field>
+        <field to="auth.user" name="modified_by" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="2" model="program.program">
+        <field type="CharField" name="title">BBM</field>
+        <field to="gallery.gallery" name="gallery" rel="ManyToOneRel">2</field>
+        <field to="program.programcategory" name="program_category" rel="ManyToOneRel"><None></None></field>
+        <field type="TextField" name="content">&lt;strong&gt;&lt;h5&gt;Berbagi Bersama Masyarakat (BBM)&lt;/h5&gt;&lt;/strong&gt; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</field>
+        <field type="CharField" name="slug">program, bbm</field>
+        <field type="BooleanField" name="hide">False</field>
+        <field type="DateTimeField" name="created">2016-01-18T06:16:15.510820+00:00</field>
+        <field to="auth.user" name="created_by" rel="ManyToOneRel">1</field>
+        <field type="DateTimeField" name="modified">2016-01-18T06:16:15.510851+00:00</field>
+        <field to="auth.user" name="modified_by" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="3" model="program.program">
+        <field type="CharField" name="title">BEBF 2</field>
+        <field to="gallery.gallery" name="gallery" rel="ManyToOneRel">3</field>
+        <field to="program.programcategory" name="program_category" rel="ManyToOneRel"><None></None></field>
+        <field type="TextField" name="content">&lt;h4&gt;BRIGHT EYES BRIGHT FUTURE&lt;/h4&gt; merupakan program kerjasama Yayasan Berani Bhakti Bangsa bersama Kementerian Pemberdayaan Perempuan dan Perlindungan Anak bersama dan PT. Sumber Alfaria Trijaya Tbk.
+
+
+Program ini memfasilitasi kebutuhan anak-anak untuk mendapat sarana mengatasi gangguan mata, agar dapat melihat lebih baik.Melalui mata yang sehat, mereka mampu lebih jernih dalam merencanakan masa depan yang cerah. Bukan hanya itu, program ini juga membangun kepedulian masyarakat mengenai pentingnya kesehatan mata.
+
+Saat ini, Kesehatan mata anak belum menjadi perhatian utama. Kekurangan informasi kesehatan mata oleh orangtua, membuat mereka tidak menyadari bahwa sang anak telah menderita kelainan refraksi. Selain itu, rendahnya daya beli masyarakat juga menjadi salah satu faktor. Ketika orangtua mengetahui bahwa sang anak menderita kelainan refraksi tetapi tidak memeriksakannya karena biaya yang mahal untuk pemeriksaan mata dan pembuatan kacamata.
+
+Setiap tahunnya, pengguna kacamata minus mengalami peningkatan. Sekitar 55 juta penduduk Indonesia menderita kelainan refraksi 10 persen diantaranya anak usia 5-19 tahun. angka ini mengalami peningkatan luar biasa yang diduga karena adanya kemajuan teknologi. Televisi, komputer, Handphone, game, yang turut memicu peningkatan pengguna kacamata.
+
+Dalam proses pelaksanaan donasi, kami telah melakukan pemeriksaan terhadap 130.000 anak di 413 sekolah seluruh Indonesia. Berdasarkan pemeriksaan tersebut sebanyak 40.000 anak telah menerima donasi kacamata minus. Melihat situasi di lapangan menunjukan, kebutuhan kacamata untuk anak-anak masih sangat besar yaitu 7.5% dari total populasi anak-anak di Indonesia (sekitar 6 juta anak).
+
+Kami percaya dengan membantu kesehatan mata anak dapat membantu lebih percaya diri , memiliki kualitas akademik yang lebih baik dan menjadi generasi yang unggul.</field>
+        <field type="CharField" name="slug">program, bebf</field>
+        <field type="BooleanField" name="hide">False</field>
+        <field type="DateTimeField" name="created">2016-01-18T06:19:25.263105+00:00</field>
+        <field to="auth.user" name="created_by" rel="ManyToOneRel">1</field>
+        <field type="DateTimeField" name="modified">2016-01-18T06:19:25.263132+00:00</field>
+        <field to="auth.user" name="modified_by" rel="ManyToOneRel">1</field>
+    </object>
+</django-objects>

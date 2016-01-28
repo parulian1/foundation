@@ -43,7 +43,7 @@
 					s/he dreams to be.
 				</div>
 				<div class="bottom">
-					<div class="bottom-learn"><a href="#">&nbsp;</a></div>
+					<div class="bottom-learn"><a href="{% url 'pillar_education' %}">&nbsp;</a></div>
 				</div>
 			</div>
 			<div class="pillar_column" id="second_pillar">
@@ -55,7 +55,7 @@
 					child's present state but also for his/her future.
 				</div>
 				<div class="bottom">
-					<div class="bottom-learn"><a href="#">&nbsp;</a></div>
+					<div class="bottom-learn"><a href="{% url 'pillar_health' %}">&nbsp;</a></div>
 				</div>
 			</div>
 			<div class="pillar_column" id="third_pillar">
@@ -91,11 +91,11 @@
 						<div class="top">{{program.title}}
 						</div>
 						<div class="middle">
-							{{program.content|truncatewords:35}}
+							{{program.content|markdown|truncatewords:25}}
 						</div>
 						<div class="bottom_info">
 							<div class="bottom-learn">
-							<a href="{% url 'view_program' program.id %}">learn more..</a></div>
+							<a href="{% url 'program:view_program' program.id %}">learn more..</a></div>
 						</div>
 					</div>
 				</div>
@@ -142,7 +142,7 @@
 			</div-->
 		</div>
 	</div>
-	<div class="row" id="view_all"><a href="{% url 'program_main' %}"> >> view all </a></div>
+	<div class="row" id="view_all"><a href="{% url 'program:program_main' %}"> >> view all </a></div>
 </div>
 <div class="section" id="impact">
 	<h3 class="row">IMPACT</h3>
@@ -150,7 +150,7 @@
 	<div id="impact_graph_wrapper"> 
 		<div id="impact_graph"></div>
 	</div>
-	<div id="view_all"> <a> >> view all</a></div>
+	<div id="view_all"> <a href="{% url 'impact' %}"> >> view all</a></div>
 </div>
 <div class="news">
 	<div id="index_news">
@@ -185,13 +185,13 @@
 				</div>
 			</div>
 		</div>
-		<div id="view_all"> <a href="{% url 'news_main' %}" > >> view all</a></div>
+		<div id="view_all"> <a href="{% url 'news:news_main' %}" > >> view all</a></div>
 	</div>
 	<div id="index_blog">
 		<span class="news_title">VIDEO</span>
 		<div class="blog_info">
 			{% for video in videos %}
-				<a href="{% url 'view_video' video.id %}">
+				<a href="{% url 'gallery:view_video' video.id %}">
 				{% video video.location  as my_video %}
 				{% thumbnail my_video.thumbnail "289x190" as video_thumbnail %}
 			<div class="blog_col">
@@ -199,8 +199,8 @@
 					<div class="play_button"></div>
 				</div>
 				<div class="info">
-					<span>{{video.title}}</span>
-					<p>{{video.additional_info|default:"tetur adipiscing elit."}}</p>
+					<span>{{video.title|truncatewords:5}}</span>
+					<p>{{video.additional_info|truncatewords:5|default:"tetur adipiscing elit."}}</p>
 				</div>
 			</div>
 			{% endthumbnail %}
@@ -217,7 +217,7 @@
 				</div>
 			</div-->
 		</div>
-		<div id="view_all"> <a href="{% url 'gallery' %}"> >> view all</a></div>
+		<div id="view_all"> <a href="{% url 'gallery:gallery' %}"> >> view all</a></div>
 	</div>
 </div>
 {% endblock content_container %}

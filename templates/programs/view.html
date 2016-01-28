@@ -7,16 +7,18 @@
 
 <div class="program_content">
         <div class="program_record">
-            <span><a href="{% url 'program_main' %}">Programs</a> >> {{program.title}}</span>
+            <span><a href="{% url 'program:program_main' %}">Programs</a> >> {{program.title}}</span>
             <div class="program_title_div row">
                 <h3 class="program_title">{{program.title}}</h1>
                  <span class="program_created">{{program.modified}}</span>
             </div>
             <div class="program_news row">
                 <div class="program_image">
-                {% thumbnail program.image "350x350" crop="center" as im %}
+                {% if program.image %}
+                {% thumbnail program.image "350x350" as im %}
                     <img src="{{ im.url }}" width="{{ im.x }}" height="{{ im.y }}">
                 {% endthumbnail %}
+                {% endif %}
                 </div>
                 {{program.content|markdown}}
             </div>

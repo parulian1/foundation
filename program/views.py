@@ -1,18 +1,29 @@
 from django.conf import settings
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.core.urlresolvers import reverse
 from django.http import HttpResponse
 from django.shortcuts import render_to_response, render, get_object_or_404
 from django.template import RequestContext
 from program.models import Program
+from program.forms import ModifiedPaypalForm
 from paypal.standard.forms import PayPalPaymentsForm
 # Create your views here.
 
 def programs(request):
-	programs = Program.objects.filter(hide=False)
-	return render_to_response('programs/index.html', {
+    program_list = Program.objects.filter(hide=False).order_by('-modified')
+    paginator = Paginator(program_list, 4)
+    page = request.GET.get('page')
+    try:
+        programs = paginator.page(page)
+    except PageNotAnInteger:
+        programs = paginator.page(1)
+    except EmptyPage:
+        programs = paginator.page(paginator.num_pages)
+
+    return render_to_response('programs/index.html', {
         'active': 2,
-		'programs': programs,
-		}, context_instance=RequestContext(request))
+    	'programs': programs,
+    	}, context_instance=RequestContext(request))
 
 def view_program(request, program_id):
     program = get_object_or_404(Program, id=program_id)
@@ -25,18 +36,20 @@ def view_that_asks_for_money(request):
     programs = Program.objects.filter(hide=False)
     # What you want the button to do.
     paypal_dict = {
+        "button_type": 'donate',
         "business": settings.PAYPAL_RECEIVER_EMAIL,
-        "amount": "50.00",
-        "item_name": "Donation to berani foundation",
+        "amount": "2.00",
+        "item_name": "Donasi untuk yayasan berani bhakti bangsa",
         "invoice": "unique-invoice-id",
         "notify_url": "https://www.example.com" + reverse('paypal-ipn'),
-        "return_url": "https://www.example.com/your-return-location/",
-        "cancel_return": "https://www.example.com/your-cancel-location/",
+        "return_url": reverse('program_donate'),
+        "cancel_return": reverse('program_donate'),
         "custom": "Upgrade all users!",  # Custom command to correlate to some function later (optional)
     }
 
     # Create the instance.
-    form = PayPalPaymentsForm(initial=paypal_dict)
+    form = ModifiedPaypalForm(initial=paypal_dict)
+    # if form.method 
     context = {"form": form, "programs": programs,}
     return render(request, "programs/donate.html", context)
 

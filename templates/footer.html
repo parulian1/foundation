@@ -3,24 +3,24 @@
 		<div class="row" id="footer_links">
 			<div class="column" id="program_links">
 				<span id="program_link_header">OUR PROGRAM</span>
-				<a id="program_link" href="{% url 'program_help' %}">About Help</a>
-				<a id="program_link" href="{% url 'program_hold' %}">About Hold</a>
-				<a id="program_link" href="{% url 'program_hope' %}">About Hope</a>
-				<a id="program_link" href="{% url 'program_impact' %}">Program Impact</a>
+				<a id="program_link" href="{% url 'program:program_help' %}">About Help</a>
+				<a id="program_link" href="{% url 'program:program_hold' %}">About Hold</a>
+				<a id="program_link" href="{% url 'program:program_hope' %}">About Hope</a>
+				<a id="program_link" href="{% url 'program:program_impact' %}">Program Impact</a>
 			</div>
 			<div class="column" id="involved_links">
 				<span id="program_link_header">GET INVOLVED</span>
-				<a id="program_link" href="{% url 'program_donate' %}">Donate</a>
-				<a id="program_link" href="{% url 'career' %}">Job & Internship</a>
+				<a id="program_link" href="{% url 'program:program_donate' %}">Donate</a>
+				<a id="program_link" href="{% url 'career:career_main' %}">Job & Internship</a>
 				<a id="program_link" href="https://www.facebook.com/Koran-Anak-BERANI-181133758007/">Like us on Facebook</a>
 				<a id="program_link" href="https://twitter.com/beranikidnews">Follow our Tweets</a>
 			</div>
 			<div class="column" id="news_media_links">
 				<span id="program_link_header">NEWS & MEDIA</span>
-				<a id="program_link" href="{% url 'news_main' %}">News Updates</a>
-				<a id="program_link" href="{% url 'news_press' %}">Press Releases</a>
-				<a id="program_link" href="{% url 'gallery' %}">Photo Video</a>
-				<a id="program_link" href="{% url 'blog_main' %}">Blog</a>
+				<a id="program_link" href="{% url 'news:news_main' %}">News Updates</a>
+				<a id="program_link" href="{% url 'news:news_press' %}">Press Releases</a>
+				<a id="program_link" href="{% url 'gallery:gallery' %}">Photo Video</a>
+				<a id="program_link" href="{% url 'news:blog_main' %}">Blog</a>
 			</div>
 		</div>
 		<div class="row" id="footer_logo">
@@ -58,15 +58,22 @@ $(function(){
 
     function checkWidth() {
         var windowsize = $window.width();
-        console.log(windowsize);
-        if (windowsize > 440) {
-            //if the window is greater than 440px wide then turn on jScrollPane..
+        // console.log(windowsize);
+        var menu = $(".nav-menu").next('ul');
+        if (windowsize > 992) {
+            
+            if(menu.hasClass("navbar-collapse")){
+                menu.removeClass("navbar-collapse");
+            }
+            if(menu.find("li").hasClass("nav-active")){
+                menu.find("li").removeClass("nav-active");
+            }
         }
     }
     // Execute on load
     checkWidth();
     // Bind event listener
-    // $(window).resize(checkWidth);
+    $(window).resize(checkWidth);
 
     $(".menu_button").mouseover(function(){
         $(this).animate({backgroundColor: "black" }, 1000); 
@@ -169,8 +176,14 @@ $(function(){
     $(".program_column").hover(function(e){
         $(this).find(".program_info").show();
     }, function(f){
-        // $(this).find(".program_info").hide();
+        $(this).find(".program_info").hide();
     });
+
+    $(".nav-menu").on('click',function(e){
+        var menu = $(".nav-menu").next('ul');
+        menu.toggleClass("navbar-collapse");
+        menu.find("li").toggleClass("nav-active");
+    })
 
 })
 </script>

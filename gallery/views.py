@@ -6,8 +6,8 @@ from gallery.models import Gallery, Video
 # Create your views here.
 
 def gallery(request):
-	galleries = Gallery.objects.filter(show=True)
-	videos = Video.objects.filter(show=True)
+	galleries = Gallery.objects.filter(show=True).order_by('-modified')
+	videos = Video.objects.filter(show=True).order_by('-modified')
 	return render_to_response('gallery/index.html', {
 		'galleries': galleries,
 		'videos': videos,

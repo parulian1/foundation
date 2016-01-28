@@ -22,14 +22,18 @@ from . import views
 
 urlpatterns = [
     url(r'^$', views.home, name='home'),
-    url(r'^story/$', views.story, name='story'),
-	url(r'^news/', include('news.urls')),
+    url(r'^career/', include('career.urls')),
     url(r'^gallery/', include('gallery.urls')),
+    url(r'^impact/$', views.impact, name='impact'),
+    url(r'^news/', include('news.urls')),
+    url(r'^pillar/education/$', views.pillar_education, name='pillar_education'),
+    url(r'^pillar/health/$', views.pillar_health, name='pillar_health'),
     url(r'^program/', include('program.urls')),
+    url(r'^story/$', views.story, name='story'),
     url(r'^supportus/$', views.support_us, name='support_us'),
     url(r'^admin/', admin.site.urls),
     url(r'^something/paypal/', include('paypal.standard.ipn.urls')),
-    url(r'^tinymce/', include('tinymce.urls')),
+    # url(r'^tinymce/', include('tinymce.urls')),
 ] 
 
 

@@ -7,40 +7,54 @@
 <div class="content_wrapper">
 
 <div class="image_content">
+    <table>
        {% for  gallery in galleries %}
-        <div class="image_record" style="{% if forloop.counter0|divisibleby:'3' %}clear:both;{%endif%}">
-            <div class="image_title_div row">
-                <div class="image_title">
-                    <h4>{{gallery.title}}</h4>
-                </div>
+            {% if forloop.counter0|divisibleby:'3' %}
+                <tr >
+            {% endif %}
+        <td class="image_column">
+                <h4 class="row">
+                {{gallery.title}}
+                </h4>
                 <div class="image_created">
+                    {{gallery.modified}}
+                    {% thumbnail gallery.image "250x250" as im %}
+                        <img src="{{ im.url }}" width="{{ im.x }}" height="{{ im.y }}">
+                    {% endthumbnail %}
                 </div>
-            </div>
-            <div class="image_news row">
-                {% thumbnail gallery.image "250x250" crop="center" as im %}
-                    <img src="{{ im.url }}" width="{{ im.x }}" height="{{ im.y }}">
-                {% endthumbnail %}
-            </div>
-        </div>
+        </td>
+        {% ifnotequal forloop.counter0 0 %}
+            {% if forloop.counter|divisibleby:'3' %}
+                </tr>
+            {% endif %}
+        {% endifnotequal %}
         {% endfor %}
+    </table>
 </div>
 <div class="video_content row">
+    <table>
        {% for  video in videos %}
-        <div class="video_record" style="{% if forloop.counter0|divisibleby:'2' %}clear:both;{%endif%}">
-            <div class="video_title_div row">
-                <div class="video_title">
-                    <h4>{{video.title}}</h4>
-                </div>
-                <div class="video_created">
-                </div>
-            </div>
-            <div class="video_news row">
-                {% video video.location  as my_video %}
-                  {% video my_video '450x350' %}
-                {% endvideo %}
-            </div>
-        </div>
+       {% if forloop.counter0|divisibleby:'2' %}
+            <tr>
+       {% endif %}
+                <td class="video_column">
+                        <div class="row">
+                            <h4>{{video.title}}</h4>
+                        </div>
+                        <div class="video_created">
+                            {{video.modified}}
+                        </div>
+                        {% video video.location  as my_video %}
+                          {% video my_video '450x350' %}
+                        {% endvideo %}
+                </td>
+        {% ifnotequal forloop.counter0 0 %}
+            {% if forloop.counter|divisibleby:'2' %}
+                </tr>
+            {% endif %}
+        {% endifnotequal %}
         {% endfor %}
+    </table>
 </div>
 </div>
 {% endblock content_container %}

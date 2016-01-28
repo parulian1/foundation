@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block title %}Pillar - Education {% endblock title %}
+{% block content_container %}
+{% load markup %}
+{% load thumbnail %}
+<div class="content_wrapper">
+
+<div class="program_content">
+        <div class="">
+            <!-- <span><a href="{% url 'program:program_main' %}">Pillar</a> >> Health</span> -->
+            <div class="row">
+                <table id="pillar-table">
+                    <tr>
+                        <td id="health_logo1">
+                            <div id="education_logo">Lack of education</div>
+                        </td>
+                        <td id="health_info2">
+                            <div id="literacy_logo">Low literacy rate </div>
+                        </td>
+                    </tr>
+                    <tr class="health_2ndrow">
+                        <td id="health_sanitation">
+                            When people still have to struggle with everyday’s necessities, long-term investment in their children’s education is not a priority anymore. 
+                        </td>
+                        <td>
+                            Literacy loses its importance as people are busy hustling to make ends meet. 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>2.5 million Indonesian children</strong> drop out of school. (UNICEF, 2009)
+                        </td>
+                        <td>
+                            <strong>In every 1,000 people</strong>, there is only one person who has interest in reading. (UNESCO)
+                        </td>
+                    </tr>
+                </table>
+            </div>
+    </div>
+</div>
+{% endblock content_container %}

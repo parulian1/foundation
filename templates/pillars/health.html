@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block title %}Pillar - Health {% endblock title %}
+{% block content_container %}
+{% load markup %}
+{% load thumbnail %}
+<div class="content_wrapper">
+
+<div class="program_content">
+        <div class="">
+            <!-- <span><a href="{% url 'program:program_main' %}">Pillar</a> >> Health</span> -->
+            <div class="pillar_health-top row">
+            </div>
+            <div id="pillar_health-top-info">
+                <strong>28.5 million</strong> people or about 11,2% of total population in Indonesia live bellow the poverty line. (BPS, 2015)
+            </div>
+            <div class="row">
+                It would lead to: <br/>
+                <table id="pillar-table">
+                    <tr>
+                        <td id="health_logo1">
+                            <div id="unhealthy_logo">Unhealthy sanitation</div>
+                        </td>
+                        <td id="health_info2">
+                            <div id="health_logo">Lack of health access</div>
+                        </td>
+                    </tr>
+                    <tr class="health_2ndrow">
+                        <td id="health_sanitation">
+                            Poverty forces people to live on informal lands. As they occupy slums, their basic sanitation, and health, are at risk. 
+                        </td>
+                        <td>
+                            Poor public health service means that people would need to rely on private health service and one would need to be of a certain socio-economic status to afford that. 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            There are <strong>3,201 identified slums</strong> in Indonesia with total area 34, 374 hectare. (Ministry of Public Work, 2014)
+                        </td>
+                        <td>
+                            There are only <strong>5.6 hospitals per 100,000 people</strong> in Indonesia. (World Bank, 2008). 
+                        </td>
+                    </tr>
+                </table>
+            </div>
+    </div>
+</div>
+{% endblock content_container %}

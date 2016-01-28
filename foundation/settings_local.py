@@ -25,7 +25,7 @@ SECRET_KEY = 'k_n)kka8cdadgq32g!fu8=f6vq#ip7e4jb!%yy&*3f7bdg-%1='
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['192.168.1.134',]
 
 
 # Application definition
@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'news.apps.NewsConfig',
     'program.apps.ProgramConfig',
     'gallery.apps.GalleryConfig',
+    'maps.apps.MapsConfig', 
+    'career.apps.CareerConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -94,6 +96,14 @@ DATABASES = {
         'PASSWORD': 'dev',
         'HOST': 'localhost',
         'PORT': '',
+    },
+    'mysql': {
+       'ENGINE': 'django.db.backends.mysql',
+       'NAME': 'yayasan',
+       'USER': 'root',
+       'PASSWORD': 'dev',
+       'HOST': 'localhost',
+       'PORT': '',
     }
     # 'default': {
     #     'ENGINE': 'django.db.backends.sqlite3',
@@ -141,16 +151,16 @@ THUMBNAIL_DEBUG = True
 
 STATIC_URL_PATH = '/static/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-STATIC_URL =  "http://192.168.1.123" + STATIC_URL_PATH
+STATIC_URL =  "http://192.168.1.134" + STATIC_URL_PATH
 
 MEDIA_URL_PATH = '/media/'
-MEDIA_URL = 'http://192.168.1.123' + MEDIA_URL_PATH
+MEDIA_URL = 'http://192.168.1.134' + MEDIA_URL_PATH
 
 BLOG_MEDIA_URL_PATH = '/blog/media/'
-BLOG_MEDIA_URL = 'http://192.168.1.123' + BLOG_MEDIA_URL_PATH
+BLOG_MEDIA_URL = 'http://192.168.1.134' + BLOG_MEDIA_URL_PATH
 
-DJANGO_TINYMCE_JS_URL = "http://192.168.1.123/static/django_tinymce/init_tinymce.js"
-TINYMCE_JS_URL = "http://192.168.1.123/static/tiny_mce/tiny_mce.js"
+DJANGO_TINYMCE_JS_URL = "http://192.168.1.100/static/django_tinymce/init_tinymce.js"
+TINYMCE_JS_URL = "http://192.168.1.134/static/tiny_mce/tiny_mce.js"
 
 # STATICFILES_DIRS = [
 #     "/static",
@@ -187,7 +197,7 @@ if len(LOGGER.handlers) == 0:
     LOGGER.addHandler(console)
 ##################################################################################################
 MARKITUP_FILTER = ('django.contrib.markup.templatetags.markup.textile', {})
-PAYPAL_RECEIVER_EMAIL = "donasi@yayasanberani.com"
+PAYPAL_RECEIVER_EMAIL = "yayasan.berani.bhakti@gmail.com"
 
 INDEX_IMAGE_SLIDER_LIMIT = 5  #this variable to limit image slider that will be shown at index
 INDEX_PILLARS_LIMIT = 3 #this variable to limit pillars content that will be shown at index
@@ -204,5 +214,9 @@ TINYMCE_DEFAULT_CONFIG = {
     'width': 900,
 }
 
+FIXTURE_DIRS = (
+    os.path.join(BASE_DIR, 'foundation', 'fixtures'), 
+    )
 
+SANDBOX_POSTBACK_ENDPOINT = "https://www.sandbox.paypal.com/cgi-bin/webscr"
 

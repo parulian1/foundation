@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block title %}Pillar - Education {% endblock title %}
+{% block content_container %}
+{% load markup %}
+{% load thumbnail %}
+<div class="content_wrapper">
+
+<div class="impact">
+            <!-- <span><a href="{% url 'program:program_main' %}">Pillar</a> >> Health</span> -->
+            <div class="row">
+                <h3>IMPACT</h3>
+                <div class="row">
+                    Berani Bhakti bangsa Foundation have worked with governmental bodies, non-governmental institutions, schools, and other foundations. Since 2007, the Foundation has impacted the lives of more than 200.000 individuals in Indonesia. 
+                </div>
+                <table id="impact-table">
+                    <tr class="row">
+                        <td >
+                            <div id="impact1" class="info">+600</div>
+                            <div class="row">
+                            Partnered with more than 600 schools and non-government institutions.
+                            </div>
+                        </td>
+                        <td id="center">
+                            <div>
+                                BERANI 
+                                Bhakti Bangsa Foundation
+                            </div>
+                        </td>
+                        <td >
+                            <div id="impact2" class="info">+50</div>
+                            <div class="row">Reach out to more than 50 cities and districts in Indonesia.
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="row">
+                        <td colspan="3">
+                            <div id="last_row">
+                                <div id="impact3" class="info">+200.000</div>
+                                <div class="row">
+                                    More than 200.000 children in all provinces and cities in Indonesia.
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+    </div>
+{% endblock content_container %}

@@ -21,6 +21,17 @@ def home(request):
 		'videos': videos[:2],
 		},context_instance=RequestContext(request))
 
+def pillar_education(request):
+	return render_to_response('pillars/education.html',{
+		}, context_instance=RequestContext(request))
+
+def pillar_health(request):
+	return render_to_response('pillars/health.html',{
+		}, context_instance=RequestContext(request))
+
+def impact(request):
+	return render_to_response('impact.html',{
+		}, context_instance=RequestContext(request))
 
 def story(request):
 	return render_to_response('story.html', 
