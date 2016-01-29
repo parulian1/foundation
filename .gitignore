@@ -1,1 +1,6 @@
-*.pyc
+foundation/settings_local.py
+*.jpg
+*.png
+media/file/*
+logs/*
+

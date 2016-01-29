@@ -16,7 +16,7 @@ from django.contrib.contenttypes.models import ContentType
 from news.fields import DateTimeField
 from news.models import Category
 from gallery.models import Gallery
-from tinymce.models import HTMLField
+# from tinymce.models import HTMLField
 
 class ProgramCategory(models.Model):
     name  = models.CharField(max_length=255)

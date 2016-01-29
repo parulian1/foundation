@@ -42,8 +42,8 @@ def view_that_asks_for_money(request):
         "item_name": "Donasi untuk yayasan berani bhakti bangsa",
         "invoice": "unique-invoice-id",
         "notify_url": "https://www.example.com" + reverse('paypal-ipn'),
-        "return_url": reverse('program_donate'),
-        "cancel_return": reverse('program_donate'),
+        "return_url": reverse('program:program_donate'),
+        "cancel_return": reverse('program:program_donate'),
         "custom": "Upgrade all users!",  # Custom command to correlate to some function later (optional)
     }
 
