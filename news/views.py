@@ -1,10 +1,9 @@
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.http import HttpResponse
-from django.shortcuts import render_to_response
+from django.shortcuts import render_to_response, get_object_or_404
 from django.template import RequestContext
 
-from news.models import News, Blog, Press
-from program.models import Program
+from news.models import Blog, Category, News, Press
 
 # Create your views here.
 def news(request):
@@ -41,20 +40,27 @@ def press(request):
 		}, context_instance=RequestContext(request))
 
 
-# def slug_list(request):
-# 	news = News.objects.filter(hide=False)
-# 	programs = Program.objects.filter(hide=False)
+def view_press_by_category(request, category_id):
+	category = get_object_or_404(Category, id=category_id)
+	press_list = Press.objects.filter(category=category, hide=False).order_by('-modified')
+	paginator = Paginator(press_list, 4)
+	page = request.GET.get('page')
+	try:
+		news_press = paginator.page(page)
+	except PageNotAnInteger:
+		news_press = paginator.page(1)
+	except EmptyPage:
+		news_press = paginator.page(paginator.num_pages)
+	return render_to_response('news/view_press_by_category.html', {
+		'category': category,
+		'news_press': news_press, 
+		}, context_instance=RequestContext(request))
 
-# 	slug_list = []
-# 	for info in news:
-# 		slugs = info.slug.split(',')
-# 		for slug in slugs:
-# 			if slug not in slug_list:
-# 				slug_list.append(slug)
-# 	for program in programs:
-# 		slugs = program.slug.split(',')
-# 		for slug in slugs:
-# 			if slug not in slug_list:
-# 				slug_list.append(slug)
 
-# 	
+def view_press(request, press_id):
+	press = get_object_or_404(Press, id=press_id)
+	return render_to_response('news/view_press.html', {
+		'active': 4,
+		'press': press, 
+		}, context_instance=RequestContext(request))
+

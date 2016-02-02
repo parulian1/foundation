@@ -3,7 +3,7 @@ from django.conf import settings
 from django.shortcuts import render_to_response
 from django.template import RequestContext
 from gallery.models import Gallery, Video
-from program.models import Program
+from program.models import ProgramCategory, Program
 
 
 def home(request):
@@ -14,10 +14,13 @@ def home(request):
 					show=True).order_by('-created')
 	programs = Program.objects.filter(hide=False)
 	videos = Video.objects.filter(show=True)
+	program_list = []
+	for p_category in ProgramCategory.objects.all().order_by('-created')[:PROGRAM_LIMIT]:
+		program_list.append({'category': p_category, 'programs': p_category.program_set.order_by('-created')})
 	
 	return render_to_response('index.html',{ 
 		'images': main_images[:MAIN_IMAGE_LIMIT],
-		'programs': programs[:PROGRAM_LIMIT],
+		'program_list': program_list,
 		'videos': videos[:2],
 		},context_instance=RequestContext(request))
 

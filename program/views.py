@@ -4,13 +4,13 @@ from django.core.urlresolvers import reverse
 from django.http import HttpResponse
 from django.shortcuts import render_to_response, render, get_object_or_404
 from django.template import RequestContext
-from program.models import Program
+from program.models import ProgramCategory, Program
 from program.forms import ModifiedPaypalForm
 from paypal.standard.forms import PayPalPaymentsForm
 # Create your views here.
 
 def programs(request):
-    program_list = Program.objects.filter(hide=False).order_by('-modified')
+    program_list = Program.objects.filter(hide=False).order_by('program_category', '-modified')
     paginator = Paginator(program_list, 4)
     page = request.GET.get('page')
     try:
@@ -24,6 +24,23 @@ def programs(request):
         'active': 2,
     	'programs': programs,
     	}, context_instance=RequestContext(request))
+
+def view_category(request, category_id):
+    category = get_object_or_404(ProgramCategory, id=category_id)
+    related_program = Program.objects.filter(program_category=category, hide=False)
+    paginator = Paginator(related_program, 4)
+    page = request.GET.get('page')
+    try:
+        programs = paginator.page(page)
+    except PageNotAnInteger:
+        programs = paginator.page(1)
+    except EmptyPage:
+        programs = paginator.page(paginator.num_pages)
+    return render_to_response('programs/category.html', {
+        'category': category,
+        'programs': programs,
+        }, context_instance=RequestContext(request))
+
 
 def view_program(request, program_id):
     program = get_object_or_404(Program, id=program_id)

@@ -246,7 +246,7 @@ header ul{
 		padding-right: 50px;
 	}
 	#subscribe-text{
-    	width: 285px;
+    	width: 90%;
 	}
 }
 
@@ -1321,4 +1321,23 @@ td#center div{
     color: white;
     font-weight: bold;
     text-align: center;
+}
+p.caption{
+	text-indent: 2em;
+}
+
+#program_image, #press_image{
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	margin-bottom: 15px;
+}
+
+#press_record, #program_record, #blog_record{
+    padding: 10px 20px 10px 20px;
+    text-align: justify;
+}
+
+.press_news #detail_info p, .program_news #detail_info p{
+	text-indent: 2em;
 }

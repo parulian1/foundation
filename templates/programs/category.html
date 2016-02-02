@@ -1,11 +1,12 @@
 {% extends "base.html" %}
-{% block title %}Programs{% endblock title %}
+{% block title %}{{category}}{% endblock title %}
 {% block content_container %}
 {% load markup %}
 {% load thumbnail %}
 <div class="content_wrapper">
 
 <div class="program_content">
+    <h3>{{category}}</h3>
        {% for  program in programs %}
         <div class="program_record">
             <div class="program_title_div row">

@@ -7,10 +7,10 @@
 <div class="big_image">
 	  <div class="row images">
 	  {% for image in images %}
-	  	{% thumbnail image.image "x360" crop="center" as im %}
+	  	{% thumbnail image.image "x360"  as im %}
 	  	<div value="{{forloop.counter}}" 
 	  		class="image {% ifequal forloop.counter 1 %}current_image{% endifequal %}"
-	  		style="background: url({{im.url}}); background-size: {{im.x}} {{im.y}};">
+	  		style="background: url({{im.url}}); background-size: 100% 100%;">
 	    		{{image.image_info|markdown}}
 		</div>
 		{% endthumbnail %}
@@ -81,21 +81,21 @@
 	<div class="row text">Things that we have done</div>
 	<div class="row" id="index_program">
 		<div id="program_wrapper">
-		{% for program in programs %}
+		{% for program in program_list %}
 			<div class="program_column" id="program{{forloop.counter}}"
-				style="{% if program.gallery %}
-				background:url({{program.gallery.image.url}}) no-repeat;
+				style="{% if program.programs.0.gallery %}
+				background:url({{program.programs.0.gallery.image.url}}) no-repeat;
 				{% endif%}background-size: 100% 100%;">
 				<div class="program_picture">
 					<div class="program_info">
-						<div class="top">{{program.title}}
+						<div class="top">{{program.category}}
 						</div>
 						<div class="middle">
-							{{program.content|markdown|truncatewords:25}}
+							{{program.programs.0.content|markdown|truncatewords:25}}
 						</div>
 						<div class="bottom_info">
 							<div class="bottom-learn">
-							<a href="{% url 'program:view_program' program.id %}">learn more..</a></div>
+							<a href="{% url 'program:view_program_by_category' program.category.id %}">learn more..</a></div>
 						</div>
 					</div>
 				</div>
@@ -195,7 +195,7 @@
 				{% video video.location  as my_video %}
 				{% thumbnail my_video.thumbnail "289x190" as video_thumbnail %}
 			<div class="blog_col">
-				<div class="example" style="background: url({{video_thumbnail.url}}) no-repeat; background-size: 100%;">
+				<div class="example" style="background: url({{video_thumbnail.url}}) no-repeat; background-size: 100% 100%;">
 					<div class="play_button"></div>
 				</div>
 				<div class="info">

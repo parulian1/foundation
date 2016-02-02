@@ -6,21 +6,23 @@
 <div class="content_wrapper">
 
 <div class="program_content">
-        <div class="program_record">
-            <span><a href="{% url 'program:program_main' %}">Programs</a> >> {{program.title}}</span>
+    <span><a href="{% url 'program:program_main' %}">Programs</a> >><a href="{% url 'program:view_program_by_category' program.program_category_id %}"> {{program.program_category}}</a> >> {{program.title}}</span>
+        <div id="program_record">
+            
             <div class="program_title_div row">
                 <h3 class="program_title">{{program.title}}</h1>
                  <span class="program_created">{{program.modified}}</span>
             </div>
             <div class="program_news row">
-                <div class="program_image">
+                <div id="program_image" class="row">
                 {% if program.image %}
-                {% thumbnail program.image "350x350" as im %}
+                {% thumbnail program.image "450x450" as im %}
                     <img src="{{ im.url }}" width="{{ im.x }}" height="{{ im.y }}">
                 {% endthumbnail %}
+                    {% if program.image.image_info %}<span class="row">{{program.gallery.image_info}}</span>{% endif %}
                 {% endif %}
                 </div>
-                {{program.content|markdown}}
+                <div class="row" id="detail_info">{{program.content|markdown}}</div>
             </div>
         </div>
 </div>

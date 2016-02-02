@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block title %}Press - {{press.title}}{% endblock title %}
+{% block content_container %}
+{% load markup %}
+{% load thumbnail %}
+{% load news_template_tag %}
+<div class="content_wrapper">
+
+<div class="press_content">
+    <span><a href="{% url 'news:news_press' %}">Programs</a> >><a href="{% url 'news:view_press_by_category' press.category_id %}"> {{press.category}}</a> >> {{press.title}}</span>
+        <div id="press_record">
+            
+            <div class="press_title_div row">
+                <h3 class="press_title">{{press.title}}</h1>
+                 <span class="program_created">{{press.modified}}</span>
+            </div>
+            <div class="press_news row">
+                <div id="press_image" class="row">
+                {% thumbnail press.gallery.image "450x450" as im %}
+                    <img src="{{ im.url }}" width="{{ im.x }}" height="{{ im.y }}">
+                {% endthumbnail %}
+                {% if press.gallery.image_info %}<span class="row">{{press.gallery.image_info}}</span>{% endif %}
+                </div>
+                <div class="row" id="detail_info">
+                   {{press.location_with_content|markdown}}
+                </div>
+            </div>
+        </div>
+</div>
+</div>
+{% endblock content_container %}
