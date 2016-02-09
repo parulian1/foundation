@@ -1000,7 +1000,7 @@ div.program_column{
 	float: left;
 	width: 20%;
 	background: url(../images/video_example.png) no-repeat;
-	height: 60px;
+	height: 80px;
 	border: 1px solid #ffffff;
 }
 
@@ -1012,11 +1012,17 @@ div.program_column{
 }
 
 .news_info_detail span{
-    font-size: 18px;
+    font-size: 14px;
     font-weight: bold;
     font-family: gotham;
 }
-
+.news_info_detail span a{
+	color: #ffffff;
+}
+.news_info_detail p{
+	font-size: 12px;
+	text-align: justify;
+}
 #footer_links{
 	color: #ffffff;
 	font-family: impact;
@@ -1340,4 +1346,11 @@ p.caption{
 
 .press_news #detail_info p, .program_news #detail_info p{
 	text-indent: 2em;
+	font-size: 14px;
+	text-align: justify;
+}
+
+#detail_info{
+	font-size: 14px;
+	text-align: justify;
 }

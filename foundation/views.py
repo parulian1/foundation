@@ -3,13 +3,14 @@ from django.conf import settings
 from django.shortcuts import render_to_response
 from django.template import RequestContext
 from gallery.models import Gallery, Video
+from news.models import Press
 from program.models import ProgramCategory, Program
 
 
 def home(request):
 	MAIN_IMAGE_LIMIT = getattr(settings, 'INDEX_IMAGE_SLIDER_LIMIT', 4)
 	PROGRAM_LIMIT = getattr(settings, 'INDEX_PROGRAMS_LIMIT', 3)
-
+	NEWS_LIMIT = getattr(settings, 'INDEX_NEWS_LIMIT', 3)
 	main_images = Gallery.objects.filter(show_to_index=True, 
 					show=True).order_by('-created')
 	programs = Program.objects.filter(hide=False)
@@ -17,8 +18,9 @@ def home(request):
 	program_list = []
 	for p_category in ProgramCategory.objects.all().order_by('-created')[:PROGRAM_LIMIT]:
 		program_list.append({'category': p_category, 'programs': p_category.program_set.order_by('-created')})
-	
+	press = Press.objects.order_by('-created')
 	return render_to_response('index.html',{ 
+		'news': press[:NEWS_LIMIT],
 		'images': main_images[:MAIN_IMAGE_LIMIT],
 		'program_list': program_list,
 		'videos': videos[:2],

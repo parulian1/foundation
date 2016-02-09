@@ -7,10 +7,10 @@
 <div class="big_image">
 	  <div class="row images">
 	  {% for image in images %}
-	  	{% thumbnail image.image "x360"  as im %}
+	  	{% thumbnail image.image "x360" crop="center" as im %}
 	  	<div value="{{forloop.counter}}" 
 	  		class="image {% ifequal forloop.counter 1 %}current_image{% endifequal %}"
-	  		style="background: url({{im.url}}); background-size: 100% 100%;">
+	  		style="background: url({{im.url}});">
 	    		{{image.image_info|markdown}}
 		</div>
 		{% endthumbnail %}
@@ -85,7 +85,7 @@
 			<div class="program_column" id="program{{forloop.counter}}"
 				style="{% if program.programs.0.gallery %}
 				background:url({{program.programs.0.gallery.image.url}}) no-repeat;
-				{% endif%}background-size: 100% 100%;">
+				{% endif%}">
 				<div class="program_picture">
 					<div class="program_info">
 						<div class="top">{{program.category}}
@@ -156,34 +156,17 @@
 	<div id="index_news">
 		<span class="news_title">NEWS</span>
 		<div class="news_info">
+			{% for info in news %}
+			{% thumbnail info.gallery.image "x80"  as im %}
 			<div class="news_info_section">
-				<div class="news_info_img"></div>
+				<div class="news_info_img" style="background: url({{im.url}}) no-repeat;"></div>
 				<div class="news_info_detail">
-					<span>Lorem ipsum</span>
-					<p>bla bla bla</p>
+					<span><a href="{% url 'news:view_press' info.id %}">{{info.title}}</a></span>
+					<p>{{info.content|truncatechars:"80"}}<a href="{% url 'news:view_press' info.id %}">see more</a></p>
 				</div>
 			</div>
-			<div class="news_info_section">
-				<div class="news_info_img"></div>
-				<div class="news_info_detail">
-					<span>Lorem ipsum</span>
-					<p>bla bla bla</p>
-				</div>
-			</div>
-			<div class="news_info_section">
-				<div class="news_info_img"></div>
-				<div class="news_info_detail">
-					<span>Lorem ipsum</span>
-					<p>bla bla bla</p>
-				</div>
-			</div>
-			<div class="news_info_section">
-				<div class="news_info_img"></div>
-				<div class="news_info_detail">
-					<span>Lorem ipsum</span>
-					<p>bla bla bla</p>
-				</div>
-			</div>
+			{% endthumbnail %}
+			{% endfor %}
 		</div>
 		<div id="view_all"> <a href="{% url 'news:news_main' %}" > >> view all</a></div>
 	</div>

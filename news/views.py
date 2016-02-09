@@ -7,7 +7,8 @@ from news.models import Blog, Category, News, Press
 
 # Create your views here.
 def news(request):
-	news = News.objects.filter(hide=False).order_by("-modified")
+	# news = News.objects.filter(hide=False).order_by("-modified")
+	news = None
 	if not news:
 		news = []
 		for press in Press.objects.filter(hide=False):
