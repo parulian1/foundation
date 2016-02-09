@@ -1346,11 +1346,13 @@ p.caption{
 
 .press_news #detail_info p, .program_news #detail_info p{
 	text-indent: 2em;
+}
+
+.blog_news, .press_news, #detail_info{
 	font-size: 14px;
 	text-align: justify;
 }
 
-#detail_info{
-	font-size: 14px;
-	text-align: justify;
+p{
+	line-height: 24px;
 }
