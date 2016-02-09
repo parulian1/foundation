@@ -162,7 +162,7 @@
 				<div class="news_info_img" style="background: url({{im.url}}) no-repeat;"></div>
 				<div class="news_info_detail">
 					<span><a href="{% url 'news:view_press' info.id %}">{{info.title}}</a></span>
-					<p>{{info.content|markdown|truncatechars:"80"}}<a href="{% url 'news:view_press' info.id %}">see more</a></p>
+					{{info.content|markdown|truncatechars:"80"}}<a href="{% url 'news:view_press' info.id %}">see more</a>
 				</div>
 			</div>
 			{% endthumbnail %}
