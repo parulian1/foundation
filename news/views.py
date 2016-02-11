@@ -10,9 +10,15 @@ def news(request):
 	# news = News.objects.filter(hide=False).order_by("-modified")
 	news = None
 	if not news:
-		news = []
-		for press in Press.objects.filter(hide=False):
-			news.append(press)
+		press_list = Press.objects.filter(hide=False).order_by('-modified')
+		paginator = Paginator(press_list, 4)
+		page = request.GET.get('page')
+		try:
+			news = paginator.page(page)
+		except PageNotAnInteger:
+			news = paginator.page(1)
+		except EmptyPage:
+			news = paginator.page(paginator.num_pages)
 	return render_to_response('news/index.html', {
 		'news': news,
 		}, context_instance=RequestContext(request))

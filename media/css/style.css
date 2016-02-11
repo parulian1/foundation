@@ -553,6 +553,8 @@ background: yellow; cursor: default;
     height: 360px;
     width: 100%;
     overflow: hidden;
+    padding: 10px;
+    border-bottom: 10px solid #1fa6e0;
 }
 .section h3{
 	font-family: impact;
@@ -1049,10 +1051,11 @@ div.program_column{
 
 #impact_graph{
 	background: url(../images/impact_example.png) no-repeat;
-	background-size: 100% 100%;
+	/*background-size: 100% 100%;*/
 	height: 350px;
 	margin-left: auto;
 	margin-right: auto;
+	width: 55%;
 }
 #impact #view_all{
 	padding-top: 20px;

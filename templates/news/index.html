@@ -6,22 +6,38 @@
 <div class="content_wrapper">
 
 <div class="blog_content">
-        {% for  info in news %}
-        <div class="blog_record">
-            <div class="blog_title_div row">
-                <h3 class="blog_title">{{info.title}}</h1>
-                 <span class="blog_created">{{info.modified}}</span>
+        {% for  press in news %}
+        <div class="press_record">
+            <div class="press_title_div row">
+                <h3 class="press_title">{{press.title}}</h1>
+                 <span class="program_created">{{press.modified}}</span>
             </div>
-            <div class="blog_news row">
-                <div class="blog_image">
-                {% thumbnail info.gallery.image "350x350" as im %}
+            <div class="press_news row">
+                <div class="press_image">
+                {% thumbnail press.gallery.image "350x350" as im %}
                     <img src="{{ im.url }}" width="{{ im.x }}" height="{{ im.y }}">
                 {% endthumbnail %}
                 </div>
-                {{info.content|markdown }}
+                    {{press.location_with_content|markdown|truncatewords:90 }}
+                <a href="{% url 'news:view_press' press.id %}">see more..</a>
             </div>
         </div>
         {% endfor %}
+        <div class="pagination">
+            <span class="step-links">
+                {% if news.has_previous %}
+                    <a href="?page={{ news.previous_page_number }}">previous</a>
+                {% endif %}
+
+                <span class="current">
+                    Page {{ news.number }} of {{ news.paginator.num_pages }}.
+                </span>
+
+                {% if news.has_next %}
+                    <a href="?page={{ news.next_page_number }}">next</a>
+                {% endif %}
+            </span>
+        </div>
 </div>
 </div>
 {% endblock content_container %}
